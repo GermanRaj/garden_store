@@ -14,11 +14,14 @@ useEffect(() => {
 const productsOnSaleData = useSelector(store => store.productsOnSales)
 console.log(productsOnSaleData);
 
+const shuffledProductsOnSales = productsOnSaleData.sort(() => Math.random() - 0.5);
+
+const randomProductsOnsales = shuffledProductsOnSales.slice(0, 4);
 
   return (
     <div>
         {
-        productsOnSaleData.map(el=> <ProductsOnSaleCard key ={el.id} {...el} /> )
+        randomProductsOnsales.map(el=> <ProductsOnSaleCard key ={el.id} {...el} /> )
         }
     </div>
   )
