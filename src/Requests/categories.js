@@ -1,4 +1,4 @@
-import { loadCategoriesAction } from "../store/reducers/categories"
+import { loadCategoriesAction } from "../store/reducers/categoriesReducers"
 
 
 export const getCategoriesPage = (dispatch) => {
