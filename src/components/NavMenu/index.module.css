@@ -4,11 +4,12 @@
     justify-content: center;
     gap: 40px;
     padding: 15px 0;
-    font-size: 15px;
+    font-size: 14px;
     }
   
   .nav_menu a {
     color: #424436;
     text-decoration: none;
+
   }
   
