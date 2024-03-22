@@ -1,0 +1,9 @@
+.products_on_sales{
+
+}
+
+.products_on_sales > img {
+    width: 400px;
+    height:200px ;
+    object-fit: contain;
+}

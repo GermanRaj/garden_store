@@ -1,8 +1,9 @@
 import { loadCategoriesAction } from "../store/reducers/categoriesReducers"
+import { domen } from "../domen"
 
 
 export const getCategoriesPage = (dispatch) => {
-    fetch('http://localhost:3333/categories/all')
+    fetch(`${domen}/categories/all`)
     .then(res =>res.json())
     .then(json => dispatch(loadCategoriesAction(json)))
 }
