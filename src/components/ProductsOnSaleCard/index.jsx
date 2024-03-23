@@ -8,7 +8,7 @@ export default function ProductsOnSaleCard({image, title, price}) {
     <div className={s.products_on_sales} >
       <img src={`${domen}${image}`} alt={title} />
       <p>{ title }</p>
-      <p> {price} $</p>
+      <p> ${price} </p>
     </div>
   )
 }
