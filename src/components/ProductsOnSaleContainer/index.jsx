@@ -16,7 +16,7 @@ useEffect(() => {
 }, [])
 
 const productsOnSaleData = useSelector(store => store.productsOnSales)
-console.log(productsOnSaleData);
+
 
 const productsWithSale = productsOnSaleData.filter(el => el.discont_price !== null)
 
