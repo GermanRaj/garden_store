@@ -1,9 +1,19 @@
 .products_on_sales{
+ border: 1px solid gray ;
+ background-color: lightgray;
+ width: 316px;
+ height: 422px;
+ margin-right: 32px;
 
+ 
+ 
 }
 
 .products_on_sales > img {
-    width: 400px;
-    height:200px ;
-    object-fit: contain;
+    width: 316px;
+    height:284px ;
+    border: 1px solid lightblue;
+}
+.products_on_sales >p :first-child{
+
 }
