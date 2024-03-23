@@ -3,14 +3,15 @@
     width: 316px;
     height: 422px;
     margin-right: 32px;
-   }
+}
    
-   .categories_card > img {
+.categories_card > img {
        width: 316px;
        height:284px ;
        border: 1px solid lightblue;
-   }
-   .categories_card >p :first-child{
+}
    
-   }
+.categories_card > p :first-child{
    
+}
+    
