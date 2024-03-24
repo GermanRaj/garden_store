@@ -3,4 +3,13 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 40px 80px 40px;
+    width: Hug (1,360px)px;
+    height: Hug (528px)px;
+    top: 808px;
+    left: 40px;
+    gap: 40px;
+    opacity: 0px;
+    margin-left: 40px;
 }
+
+/* можно копировать в sales */

@@ -1,17 +1,20 @@
 .categories_card{
-    border: 1px solid;
     width: 316px;
-    height: 422px;
-    margin-right: 32px;
+    height: 350px;
+    gap: 12px; 
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #424436; /*это же добавить в стили в sale */
+
 }
    
 .categories_card > img {
        width: 316px;
-       height:284px ;
+       height:350px ;
        border: 1px solid lightblue;
+       border-radius: 12px; /*это же добавить в стили в sale */
 }
-   
-.categories_card > p :first-child{
-   
-}
-    
+
