@@ -1,4 +1,4 @@
-.nav_menu {
+ .nav_menu  {
     background: #fffff1;
     display: flex;
     justify-content: center;
@@ -12,4 +12,5 @@
     text-decoration: none;
 
   }
+  
   
