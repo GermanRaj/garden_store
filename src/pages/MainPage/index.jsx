@@ -20,9 +20,6 @@ export default function MainPage() {
         <CategoriesContainer/>
         <div className={c.banner} style={banner_styles}></div>
         <h1>5% off on the first order</h1>
-        <h2 className={c.sale}>Sale</h2>
-          <h1 className={c.categories_title}>Categories</h1>
-            <CategoriesContainer/>
             <h1 className={c.sale}>Sale </h1>
             <ProductsOnSaleContainer/>
         <Footer/>
