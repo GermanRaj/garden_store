@@ -1,9 +1,9 @@
 import React from 'react'
 import ProductsOnSaleContainer from '../../components/ProductsOnSaleContainer'
 import CategoriesContainer from '../../components/CategoriesContainer'
+import Footer from '../../components/Footer'
 import mainpage_img from './image/img_amazing.png'
 import s from './index.module.css'
-
 
 export default function MainPage() {
 
@@ -14,15 +14,16 @@ export default function MainPage() {
   
 
   return (
-    <div className={[s.mainpage, 'wrapper'].join(' ')} style={mainpage_styles}>
-     <section>
-     <div>Check out</div>
-        <h2 className={s.categories_title}>Categories</h2>
-        <h1>Amazing Discounts on Garden Products!</h1>
+<MainPage className={s.mainpage_styles}>
+    <div>
+      <section>
+        <h1 className={s.categories_title}>Categories</h1>
         <CategoriesContainer/>
         <h1 className={s.sale}>Sale</h1>
-        <ProductsOnSaleContainer/>
+            <ProductsOnSaleContainer/>
+            <Footer />
       </section>
     </div>
+    </MainPage>
   )
 }

@@ -25,25 +25,37 @@
 
 
 .sale{
+    font-family: Montserrat;
     width: 140px;
     height:70px ;
     font-size: 64px;
     font-weight: 700;
     line-height: 70.4px;
     text-align: left;
-    margin-left:40px ;
+    margin-left: 40px;
+    color:#424436;
 
 }
 
 .categories_title {
-    width: 140px;
+    font-family: Montserrat;
+    width: 361px;
     height:70px ;
     font-size: 64px;
     font-weight: 700;
     line-height: 70.4px;
     text-align: left;
     margin-left:40px ;
+    color: #424436; /*это же добавить в стили в sale */
 }
+.check_out > div{
+    padding: 10px 15px;
+    background-color: #92A134;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
 
 .check_out > div{
     padding: 10px 15px;
