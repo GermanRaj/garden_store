@@ -7,14 +7,13 @@
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-    color: #424436; /*это же добавить в стили в sale */
+    color: #424436; /*это же добавить в стили в sale (цвет текста) */
 
 }
    
 .categories_card > img {
        width: 316px;
        height:350px ;
-       border: 1px solid lightblue;
-       border-radius: 12px; /*это же добавить в стили в sale */
+       border-radius: 12px; /*это же добавить в стили в sale (скругление углов) */
 }
 
