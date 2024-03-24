@@ -1,4 +1,4 @@
-.sale{
+.sale {
     font-family: Montserrat;
     width: 140px;
     height:70px ;
@@ -19,5 +19,31 @@
     line-height: 70.4px;
     text-align: left;
     margin-left:40px ;
-    color: #424436; /*это же добавить в стили в sale */
+    color: #424436; 
+}
+
+.banner {
+    background-color: 80.46deg, #87933D -0.68%, #55610B 66.66%;
+    width: 1,360px;
+    height: 486px;
+    top: 1416px;
+    left: 40px;
+    padding: 32px 32px 0px 32px;
+    gap: 24px;
+    border-radius: var(--radiusbig);
+    opacity: 0px;
+    
+}
+
+.banner h1 {
+    width: 1296px;
+    height: 70px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;
+    color: white;
 }
