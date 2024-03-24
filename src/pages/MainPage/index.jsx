@@ -6,6 +6,9 @@ import CategoriesContainer from '../../components/CategoriesContainer'
 export default function MainPage() {
   return (
     <div>
+
+
+      
       <section>
         <h1 className={c.categories_title}>Categories</h1>
         <CategoriesContainer/>
