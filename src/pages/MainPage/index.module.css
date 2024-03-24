@@ -1,44 +1,54 @@
-.mainpage {
-    flex-direction: column;
-    font-weight: 700px;
-    height: 600px;
-    padding-left: 20px;
-    display: flex;
 
+.mainpage h1 {
+    font-size: 96px;
+    width: 550px;
+    text-align: center;
+    line-height: 140px;
+    
 } 
 
-.mainpage  h1 {
-    font-size: 92px;
-    gap: 40px;
-    Width: 950px;
-    Height: 200px;
-    margin-top: 96px;
-    margin-left: 40px;
-    justify-content: baseline;
-    color: white;
+.mainpage {
+    color: black;
     font-family: 'Montserrat';
-    font-size: 96px;
-    
-}
-
-.smal_button {
-    padding: 10px;
-    gap: 10px;
-    background-color: #92A134;
-    font-size: 15px;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 218px;
-    height: 60px;
-    color: white;
-    float: left;
-}
-.container{
-    width: 200px;
-    height: 100px;
-    background-color: #92A134;
-    padding: 20px;
+    font-weight: 700px;
+    height: 600px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    font-size: 100px;
+    gap: 10px;
+    background-position: center;
+    background-size: cover;
+        
 }
 
+
+.sale{
+    width: 140px;
+    height:70px ;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+    margin-left:40px ;
+
+}
+
+.categories_title {
+    width: 140px;
+    height:70px ;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+    margin-left:40px ;
+}
+
+.check_out > div{
+    padding: 10px 15px;
+    background-color: #92A134;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
