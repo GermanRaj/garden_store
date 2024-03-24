@@ -8,6 +8,7 @@ footer {
 }
 
 h1 {
+    font-family: Montserrat;
     font-size: 64px;
     font-weight: 700;
     color: #424436;
@@ -29,6 +30,7 @@ h1 {
 }
 
 h2 {
+    font-family: Montserrat;
     color: #8B8B8B;
     font-size: 20px;
     font-weight: 500;
@@ -36,6 +38,7 @@ h2 {
 }
 
 h3 {
+    font-family: Montserrat;
     color: #424436;
     font-size: 40px;
     font-weight: 600;
