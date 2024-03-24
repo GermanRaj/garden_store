@@ -10,9 +10,9 @@ export default function MainPage() {
 
       
       <section>
-        <h1 className={c.categories_title}>Categories</h1>
-        <CategoriesContainer/>
-        <h1 className={c.sale}>Sale</h1>
+          <h1 className={c.categories_title}>Categories</h1>
+            <CategoriesContainer/>
+            <h1 className={c.sale}>Sale </h1>
             <ProductsOnSaleContainer/>
       </section>
     </div>
