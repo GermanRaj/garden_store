@@ -4,6 +4,7 @@ import c from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
 import image_img from './mediaMain/image.png'
 import Footer from '../../components/Footer'
+import s from './index.module.css'
 
 
 export default function MainPage() {
