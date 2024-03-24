@@ -7,8 +7,7 @@
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-    
-
+    color: #424436; /*это же добавить в стили в sale (цвет текста) */
 }
    
 .categories_card > img {
