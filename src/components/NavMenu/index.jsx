@@ -2,23 +2,30 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import s from './index.module.css'
 import logo from './media/logo_nav_menu.png'
+import basket_buy from './media/icon_garden.png' 
 
 
 
 export default function NavMenu() {
-   return (
 
+  const basket_stiles= {
+    backgroundImage: `url('${basket_buy}')`
+
+  }
+
+    return (
     <header className={s.header}>
-      <img src={logo} alt='logo'/>
+      
       <nav>
+      <img src={logo} alt='logo'/>
     <div className={s.nav_menu}>
      <Link to='/'>Main Page</Link>
      <Link to='/categories'>Categories</Link>
      <Link to='/allproducts'>All products</Link>
      <Link to='/allsales'> All sales </Link>
+     <div className={s.basket} style={basket_stiles}>x</div>
     </div>
     </nav>
-    <div>X</div>
     </header>
   )
 }
