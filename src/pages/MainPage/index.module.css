@@ -78,3 +78,10 @@
     border-radius: 6px;
     border: 1px 0px 0px 0px;
 }
+/* .hrStyle > hr {
+    display: flex;
+    flex-direction: row;
+    width: 1360px;
+    justify-content: right;
+    align-items: right;
+} */
