@@ -4,7 +4,7 @@ import c from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
 import image_img from './mediaMain/image.png'
 import Footer from '../../components/Footer'
-import s from './index.module.css'
+import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 
 
 export default function MainPage() {
@@ -12,18 +12,21 @@ export default function MainPage() {
   const banner_styles = {
     backgroundImage: `url('${image_img}')`
   }
+
+  const background_styles = {
+    backgroundImage: `url('${backGroundImageHeader}')`
+  }
+
+
   return (
-    <div> 
-        <header> 
-          Tamara's Main Page 
+    <div className={c.mainPageColor}> 
+        <header className={c.header} style={background_styles}> 
+          <p>Amazing Discounts <br/> on Garden Products!</p>
+          <button>Check out</button>
         </header>
             <body>
                   <section>
-                          <section className={s.hrStyle}>
-                            {/* <h2 className={c.categories_title}>Categories</h2>
-                            <hr class='solid'/>
-                            <p>All categories</p> */}
-                          </section>
+                         <h2 className={c.categories_title}>Categories</h2>
                         <CategoriesContainer/>
                   </section>
                       <div className={c.banner} style={banner_styles}>
