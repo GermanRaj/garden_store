@@ -4,7 +4,6 @@ import c from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
 import image_img from './mediaMain/image.png'
 import Footer from '../../components/Footer'
-import s from './index.module.css'
 
 
 export default function MainPage() {
@@ -14,13 +13,18 @@ export default function MainPage() {
   }
   return (
     <div> 
-      <header>Tamara's Main Page</header>
+      <header> Tamara's Main Page </header>
       <section>
         <h2 className={c.categories_title}>Categories</h2>
         <CategoriesContainer/>
-        <div className={c.banner} style={banner_styles}></div>
+        <div className={c.banner} style={banner_styles}>
         <h1>5% off on the first order</h1>
-            <h1 className={c.sale}>Sale </h1>
+        <p>Name</p>
+        <p>Phone number</p>
+        <p>Email</p>
+        <p>Get a discount</p>
+        </div>
+            <h2 className={c.sale}>Sale </h2>
             <ProductsOnSaleContainer/>
         <Footer/>
       </section>
