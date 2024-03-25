@@ -65,28 +65,29 @@ background-color: #FFFFF1;
 }
 
 .banner {
-    display: flex;
+    background:linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+    mix-blend-mode: multiply;
+    display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    left: 40px;
+    right: 40px;
+    position: relative;
     border-radius: 12px;
     gap: 40px;
-    background-position: center;
-    width: 748px; /* тут же он растягивает и копирует картинку */
+    background-position: left;
+    width: 1360px; 
+    background-repeat: no-repeat; 
     height: 360px;
+    top: 20px;
     }
-
-/*.banner > img {
-    background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-} */
 
 .banner h1 {
     background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-
     border-radius: 12px;
     left: 40px;
     right: 40px;
-    top: 710px;
     width: 1360px;
     height:70px;
     font-family: Montserrat;
@@ -97,26 +98,27 @@ background-color: #FFFFF1;
     color: white;
 }
 
-.banner_styles {
+/*.banner_styles {
     width: 748px;
     height: 360px;
     gap: 0px;
     opacity: 0px;
     position: absolute;
     left: 40px;
-}
-.banner_styles > p {
+} */
+
+.submit_forms {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
-    text-align: left;
+    text-align: right;
     margin-right: 50px;
     width: 516px;
     height:58px;
     padding: 16px 32px 16px 32px;
-    gap: 10px;
+    gap: 16px;
     border-radius: 6px;
-    border: 1px 0px 0px 0px;
+    border: white solid;
     
 }

@@ -31,10 +31,12 @@ export default function MainPage() {
                   </section>
                       <div className={c.banner} style={banner_styles}>
                             <h1>5% off on the first order</h1>
+                          <div className={c.submit_forms}>
                             <p>Name</p>
                             <p>Phone number</p>
                             <p>Email</p>
                             <p>Get a discount</p>
+                          </div>
                       </div>
                           <section>
                               <h2 className={c.sale}>Sale </h2>
