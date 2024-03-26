@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 body{
-  background-color: rgba(255,255,241,1);
+  background-color: rgba(255, 255, 241, 1);
   font-weight: 400;
 }
 
@@ -23,8 +23,4 @@ h2{
   font-weight: 700;
   text-align: center;
   padding-bottom: 100px;
-}
-.wrapper{
-  width: 1440px;
-  margin: 75px auto;
 }

@@ -8,7 +8,7 @@ import basket_buy from './media/icon_garden.png'
 
 export default function NavMenu() {
 
-  const basket_stiles= {
+  const basket_styles= {
     backgroundImage: `url('${basket_buy}')`
 
   }
@@ -23,7 +23,7 @@ export default function NavMenu() {
      <Link to='/categories'>Categories</Link>
      <Link to='/allproducts'>All products</Link>
      <Link to='/allsales'> All sales </Link>
-     <div className={s.basket} style={basket_stiles}>x</div>
+     <div className={s.basket} style={basket_styles}></div>
     </div>
     </nav>
     </header>

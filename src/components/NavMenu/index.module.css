@@ -2,10 +2,14 @@
     display: flex;
     font-family: 'Montserrat';
     align-items: center;
-    gap: 15px;
-    justify-content: center;
-    height: 5px;
+    gap: 50px;
+    height: 96px;
     color: rgba(66, 68, 54, 1);
+    justify-content: center;
+    margin: auto;
+    
+   
+
   
     
     }
@@ -16,11 +20,26 @@
 
 
 .basket{
-  padding: 10px 15px;
-  border-radius: 3px;
-  cursor: pointer;
+  
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 10px;
+   cursor: pointer;
 }
   
   
-  
+
+
+
+.header nav{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+
   
