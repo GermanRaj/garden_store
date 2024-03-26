@@ -1,15 +1,45 @@
-.nav_menu {
-    background: #fffff1;
+ .nav_menu  {
     display: flex;
+    font-family: 'Montserrat';
+    align-items: center;
+    gap: 50px;
+    height: 96px;
+    color: rgba(66, 68, 54, 1);
     justify-content: center;
-    gap: 40px;
-    padding: 15px 0;
-    font-size: 14px;
+    margin: auto;
+    
+   
+
+  
+    
     }
   
   .nav_menu a {
-    color: #424436;
-    text-decoration: none;
-
+    color: rgba(66, 68, 54, 1);
   }
+
+
+.basket{
+  
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   margin: 10px;
+   cursor: pointer;
+}
+  
+  
+
+
+
+.header nav{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+
   

@@ -1,122 +1,130 @@
-.mainPageColor{
-background-color: #FFFFF1;
-}
-
-.header{
-    width: 1440px;
-    height: 600px;
-    top: 128px;
-    
-}
-
-.header > p {
-    font-family: Montserrat;
-    font-size: 92px;
-    font-weight: 700;
-    line-height: 105.6px;
-    color: #FFFFFF;
-    text-align: left;
-    padding-top: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.header >button {
-    background-color: #92A134;
-    width:218px;
-    height:58px;
-    gap: 10px;
-    margin-top: 40px;
-    margin-left: 40px;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    border-radius: 12px;
-    
-}
-
-.sale {
-    font-family: Montserrat;
-    width: 140px;
-    height:70px ;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 70.4px;
-    text-align: left;
-    margin-left: 40px;
-    color:#424436;
-    padding-top: 80px;
-}
-
-.categories_title {
-    font-family: Montserrat;
-    width: 361px;
-    height:70px ;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 70.4px;
-    text-align: left;
-    margin-left:40px ;
-    color: #424436; 
-    padding-top: 80px;
-}
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    gap: 40px;
-    background-position: center;
-    width: 748px; /* тут же он растягивает и копирует картинку */
-    height: 360px;
+ .mainPageColor{
+    background-color: #FFFFF1;
     }
-
-/*.banner > img {
-    background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-} */
-
-.banner h1 {
-    background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-
-    border-radius: 12px;
-    left: 40px;
-    right: 40px;
-    top: 710px;
-    width: 1360px;
-    height:70px;
-    font-family: Montserrat;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 70.4px;
-    text-align: center;
-    color: white;
-}
-
-.banner_styles {
-    width: 748px;
-    height: 360px;
-    gap: 0px;
-    opacity: 0px;
-    position: absolute;
-    left: 40px;
-}
-.banner_styles > p {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: left;
-    margin-right: 50px;
-    width: 516px;
-    height:58px;
-    padding: 16px 32px 16px 32px;
-    gap: 10px;
-    border-radius: 6px;
-    border: 1px 0px 0px 0px;
     
-}
+    .header{
+        width: 1440px;
+        height: 600px;
+        top: 128px;
+        
+    }
+    
+    .header > p {
+        font-family: 'Montserrat';
+        font-size: 92px;
+        font-weight: 700;
+        line-height: 105.6px;
+        color: #FFFFFF;
+        text-align: left;
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .header >button {
+        background-color: #92A134;
+        width:218px;
+        height:58px;
+        gap: 10px;
+        margin-top: 40px;
+        margin-left: 40px;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        border-radius: 12px;
+        
+    }
+    
+    .sale {
+        font-family: 'Montserrat';
+        width: 140px;
+        height:70px ;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 70.4px;
+        text-align: left;
+        margin-left: 40px;
+        color:#424436;
+        padding-top: 80px;
+    }
+    
+    .categories_title {
+        font-family: 'Montserrat';
+        width: 361px;
+        height:70px ;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 70.4px;
+        text-align: left;
+        margin-left:40px ;
+        color: #424436; 
+        padding-top: 80px;
+       
+    }
+    
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        gap: 40px;
+        background-position: center;
+        width: 1360px; /* тут же он растягивает и копирует картинку */
+        height: 360px;
+        background-color: rgba(85, 97, 11, 1);
+        margin: auto;
+        /*background:linear-gradient(rgba(135, 147, 61, 1), rgba(85, 97, 11, 1));*/
+
+        }
+
+    /*.banner > img {
+        background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
+    } */
+
+    .banner h1 {
+    
+    
+        border-radius: 12px;
+        left: 40px;
+        right: 40px;
+        top: 500px;
+        width: 1360px;
+        height:70px;
+        font-family: 'Montserrat';
+        font-size: 64px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        line-height: 70px;
+    }
+    /*.banner{
+        background-image: linear-gradient(rgba(135, 147, 61, 1),rgba(85, 97, 11, 1)),
+                  url("../MainPage/mediaMain/image.png");
+    }*/
+    .banner_styles {
+        width: 748px;
+        height: 360px;
+        gap: 0px;
+        opacity: 0px;
+        position: absolute;
+        left: 40px;
+    }
+    .banner_styles > p {
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        text-align: left;
+        margin-right: 50px;
+        width: 516px;
+        height:58px;
+        padding: 16px 32px 16px 32px;
+        gap: 10px;
+        border-radius: 6px;
+        border: 1px 0px 0px 0px;
+        
+    }
