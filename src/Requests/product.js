@@ -2,6 +2,7 @@ import { loadProductsOnSalesAction } from "../store/reducers/productsOnSaleReduc
 import { domen } from "../domen"
 
 
+
 export const getProductsOnSale = (dispatch) => {
     fetch(`${domen}/products/all`)
     .then(res =>res.json())
