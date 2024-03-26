@@ -17,12 +17,12 @@ export default function MainPage() {
   }
 
   return (
-    <div className={s.mainPageColor}>  
+    <div>  
         <header className={s.header} style={background_styles}> 
           <h1 style={{color: 'white'}}>Amazing Discounts <p/> on Garden Products!</h1>
           <button>Check out</button>
         </header>
-            <body>
+            <header>
                   <section>
                          <h2 className={s.categories_title}>Categories</h2>
                       
@@ -39,7 +39,7 @@ export default function MainPage() {
                               <h2 className={s.sale}>Sale </h2>
                               <ProductsOnSaleContainer/>
                           </section>
-            </body>
+            </header>
                           <footer>
                             <Footer/>
                           </footer>
