@@ -7,6 +7,7 @@ import Footer from '../../components/Footer'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 
 
+
 export default function MainPage() {
 
   const background_styles = {
