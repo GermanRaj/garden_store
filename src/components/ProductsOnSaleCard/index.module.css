@@ -1,24 +1,21 @@
-.products_on_sales{
-    border:1px solid black;
-    background-color: #DDDDDD;
-    width: 316px;
-    height: 350px;
-    gap: 12px; 
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: center;
+.products_on_sales {
+    width:316px;
+    height:422px;
+    gap: 20px;
+    opacity: 0px;    
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     position: relative;
    }
    
-   .products_on_sales > img {
-       width: 317px;
-       height: 284px;
-       object-fit:contain;
-       border-top-left-radius: 12px;
-       border-top-right-radius: 12px;
-   
+.products_on_sales > img {
+    width: 312px;
+    height: 284px;
+    gap: 0px;
+    border: 1px solid #DDDDDD;
+    opacity: 0px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px; 
    }
    
    .products_on_sales >div>p:nth-child(1){
@@ -77,10 +74,9 @@
        letter-spacing: 0.03em;
        text-align: center;
        color: white;
-       object-fit: contain;
        position: absolute;
        bottom: 370px;
-       left: 240px;
+       left: 245px;
    }
 
 
