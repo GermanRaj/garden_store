@@ -6,11 +6,13 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     position: relative;
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
    }
    
 
 .products_on_sales > img {
-    width: 312px;
+    width: 315px;
     height: 284px;
     gap: 0px;
     border: 1px solid #DDDDDD;
@@ -28,6 +30,9 @@
     line-height: 26px;
     text-align: left;
     color: #424436;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
    
    }
    
@@ -55,7 +60,7 @@
        text-align: right;
        text-decoration: line-through;
        position: absolute;
-       top: 380px;
+       top: 355px;
        margin-left: 180px;
        
    }
@@ -73,44 +78,9 @@
        letter-spacing: 0.03em;
        color: white;
        position: absolute;
-       bottom: 370px;
+       bottom: 380px;
        left: 245px;
    }
 
-.products_on_sales > img {
-    width: 316px;
-    height:284px ;
-    border: 1px solid lightblue;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-}
 
-.products_on_sales >div>p:nth-child(2){
-    width: 103px;
-    height: 44px;
-    font-family: 'Montserrat';
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 44px;
-    margin-left: 32px;
-    margin-top:15px;
-    margin-right: 8px;
-    margin-bottom: 32px;
-    position: relative;
-    
-}
-
-.products_on_sales >div>p:nth-child(3){
-    width: 60px;
-    height: 26px;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    text-decoration: line-through;
-    position: absolute;
-    top: 355px;
-    margin-left: 200px;
-}
 

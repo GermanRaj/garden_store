@@ -17,6 +17,9 @@ export default function AllSalesPage() {
 
   return (
     <div>
+      <div>
+       <hr class='solid' />
+      </div>
       <div className={s.navigation}>
         <p className>Main page</p>
         <p>__</p>

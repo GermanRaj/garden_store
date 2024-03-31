@@ -51,6 +51,37 @@
         padding-top: 80px;
     }
     
+   .dash{
+    display: flex;
+    border: 1px solid #DDDDDD;
+    width: 825px;
+    height: 0px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+   }
+
+
+    .navCategories{
+      border: 1px solid #DDDDDD;
+      width: 146px;
+      height: 36px;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20.16px;
+      text-align: center;
+      padding: 8px 16px;
+      border-radius: 12px;
+     color: #8B8B8B;       
+    }
+
+    .navCat{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     .categories_title {
         font-family: 'Montserrat';
         width: 361px;
@@ -62,7 +93,6 @@
         margin-left:40px ;
         color: #424436; 
         padding-top: 80px;
-       
     }
     
     .banner {
@@ -83,10 +113,6 @@
         
         }
 
-    /*.banner > img {
-        background: linear-gradient(80.46deg, #87933D -0.68%, #55610B 66.66%);
-    } */
-
     .banner h1 {
         border-radius: 12px;
         left: 40px;
@@ -103,8 +129,6 @@
         
     }
    
-        
-    
     .banner_styles {
         width: 748px;
         height: 360px;
@@ -113,6 +137,7 @@
         position: absolute;
         left: 40px;
     }
+
     .banner_styles > p {
         font-family: 'Montserrat';
         font-size: 20px;
@@ -128,3 +153,34 @@
         border: 1px 0px 0px 0px;
         
     }
+
+    .dashOnsales{
+        display: flex;
+        border: 1px solid #DDDDDD;
+        width: 825px;
+        height: 0px;
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+    }
+
+    .navOnSales{
+        border: 1px solid #DDDDDD;
+        width: 146px;
+        height: 36px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 12px;
+       color: #8B8B8B;
+    }
+
+    .navSales{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+

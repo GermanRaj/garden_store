@@ -24,9 +24,14 @@ export default function MainPage() {
         </header>
             <header>
                   <section>
-                         <h2 className={s.categories_title}>Categories</h2>
-                      
+                    <div >
+                        <h2 className={s.categories_title}>Categories</h2>
+                        <div className={s.navCat}>
+                            <div className={s.dash}></div>
+                            <div className={s.navCategories}>All categories</div>
+                        </div>
                         <CategoriesContainer/>
+                  </div>
                   </section>
                       <div className={s.banner} style={banner_styles}>
                             <h1>5% off on the first order</h1>
@@ -37,6 +42,10 @@ export default function MainPage() {
                       </div>
                           <section>
                               <h2 className={s.sale}>Sale </h2>
+                              <div className={s.navSales}>
+                                  <div className={s.dashOnsales}></div>
+                                  <div className={s.navOnSales}>All sales</div>
+                              </div>
                               <ProductsOnSaleContainer/>
                           </section>
             </header>     
