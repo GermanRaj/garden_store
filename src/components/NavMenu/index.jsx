@@ -16,7 +16,7 @@ export default function NavMenu() {
     return (
     <header className={s.header}>
       
-      <nav>
+    <nav>
       <img src={logo} alt='logo'/>
     <div className={s.nav_menu}>
      <Link to='/'>Main Page</Link>
