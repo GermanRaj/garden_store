@@ -7,6 +7,7 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     position: relative;
+    cursor: pointer;
     
     
 }
@@ -45,6 +46,7 @@
     text-align: left;
     margin-top: 16px;
     margin-left: 32px;
+    
     
 }
 
