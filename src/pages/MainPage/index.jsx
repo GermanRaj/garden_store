@@ -3,7 +3,6 @@ import ProductsOnSaleContainer from '../../components/ProductsOnSaleContainer'
 import s from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
 import image_img from './mediaMain/image.png'
-import Footer from '../../components/Footer'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 
 
@@ -40,10 +39,7 @@ export default function MainPage() {
                               <h2 className={s.sale}>Sale </h2>
                               <ProductsOnSaleContainer/>
                           </section>
-            </header>
-                          <footer>
-                            <Footer/>
-                          </footer>
+            </header>     
       </div>
     
   )

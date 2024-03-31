@@ -5,6 +5,7 @@ import MainPage from './pages/MainPage';
 import AllProductPage from './pages/AllProductPage';
 import CategoriesPage from './pages/CategoriesPage';
 import AllSalesPage from './pages/AllSalesPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/allproducts' element={<AllProductPage/>}></Route>
         <Route path='/allsales' element={<AllSalesPage/>}></Route>
       </Routes>
+       <Footer/>
     </div>
   );
 }
