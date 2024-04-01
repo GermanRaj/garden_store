@@ -17,6 +17,7 @@ function App() {
         <Route path='/allproducts' element={<AllProductPage/>}></Route>
         <Route path='/allsales' element={<AllSalesPage/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }
