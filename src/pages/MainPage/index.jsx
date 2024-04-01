@@ -4,6 +4,7 @@ import s from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
 import image_img from './mediaMain/image.png'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
+import DiscountForm from '../../components/DiscountForm'
 
 
 
@@ -40,6 +41,7 @@ export default function MainPage() {
                         <p>Email</p>
                         <p>Get a discount</p>
                   </div>
+                  <DiscountForm />
                       <section>
                           <h2 className={s.sale}>Sale </h2>
                           <div className={s.navSales}>
