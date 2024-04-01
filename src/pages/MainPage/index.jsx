@@ -5,6 +5,8 @@ import CategoriesContainer from '../../components/CategoriesContainer'
 import image_img from './mediaMain/image.png'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 
+
+
 export default function MainPage() {
 
   const background_styles = {
