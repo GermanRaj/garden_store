@@ -3,6 +3,7 @@ import s from './index.module.css';
 import inst_icon from './images/ic-instagram.png';
 import whatsapp_icon from './images/ic-whatsapp.png';
 
+
 export default function Footer() {
   return (
     <footer>

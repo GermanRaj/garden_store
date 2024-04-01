@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-    <NavMenu/>
+    <NavMenu />
       <Routes>
         <Route path='/' element={<MainPage/>}></Route>
         <Route path='/categories' element={<CategoriesPage/>}></Route>
