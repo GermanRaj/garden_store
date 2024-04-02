@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
             <div className={s.info_card}>
                 <h2>Address</h2> 
-                <h3>Linkstraße 2, 8 OG, 10 785, Berlin, Deutschland</h3>
+                <h3>Linkstraße 2, 8 OG, 10 785, Berlin, Deutschland</h3>
             </div>
             <div className={s.info_card}>
                 <h2>Working Hours</h2>
