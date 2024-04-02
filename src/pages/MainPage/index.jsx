@@ -34,13 +34,6 @@ export default function MainPage() {
                     <CategoriesContainer/>
               </div>
               </section>
-                  <div className={s.banner} style={banner_styles}>
-                        <h1>5% off on the first order</h1>
-                        <p>Name</p>
-                        <p>Phone number</p>
-                        <p>Email</p>
-                        <p>Get a discount</p>
-                  </div>
                   <DiscountForm />
                       <section>
                           <h2 className={s.sale}>Sale </h2>
