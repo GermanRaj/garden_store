@@ -2,7 +2,6 @@ import React from 'react'
 import ProductsOnSaleContainer from '../../components/ProductsOnSaleContainer'
 import s from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
-import image_img from './mediaMain/image.png'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 import DiscountForm from '../../components/DiscountForm'
 
@@ -12,9 +11,6 @@ export default function MainPage() {
 
   const background_styles = {
     backgroundImage: `url('${backGroundImageHeader}')`
-  }
-  const banner_styles = {
-    backgroundImage: `url('${image_img}')`
   }
 
   return (
