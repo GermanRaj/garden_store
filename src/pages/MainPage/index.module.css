@@ -1,11 +1,13 @@
-.mainPageColor{
-background-color: #FFFFF1;
-}
+
+ .mainPageColor{
+    background-color: #FFFFF1;
+    }
 
 .header{
     width: 1440px;
     height: 600px;
     top: 128px;
+    
 }
 
 .header > p {
@@ -63,10 +65,27 @@ background-color: #FFFFF1;
     padding-top: 80px;
 }
 
-.header{
+
+.submit_forms {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: right;
+    margin-right: 50px;
+    width: 516px;
+    height:58px;
+    padding: 16px 32px 16px 32px;
+    gap: 16px;
+    border-radius: 6px;
+    border: white solid;
+}
+    
+    .header{
         width: 1440px;
         height: 600px;
         top: 128px;
+        
     }
     
     .header > h1 {
@@ -98,7 +117,7 @@ background-color: #FFFFF1;
         
     }
     
-.sale {
+    .sale {
         font-family: 'Montserrat';
         width: 140px;
         height:70px ;
