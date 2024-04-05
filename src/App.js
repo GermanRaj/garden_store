@@ -6,7 +6,9 @@ import AllProductPage from './pages/AllProductPage';
 import CategoriesPage from './pages/CategoriesPage';
 import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
+import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
 import SingleProductPage from './pages/SingleProductPage';
+
 
 function App() {
   return (
