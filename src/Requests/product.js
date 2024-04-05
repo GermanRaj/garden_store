@@ -12,7 +12,7 @@ export const getProductsOnSale = (dispatch) => {
 
 export const getSingleProduct = id => {
     return dispatch => {
-      fetch(`${domen}/product/${id}`)
+      fetch(`${domen}/products/${id}`)
         .then(res => res.json())
         .then(json => dispatch(loadSingleProductAction(json)))
     }

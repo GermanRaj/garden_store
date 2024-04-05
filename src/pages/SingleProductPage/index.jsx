@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { getSingleProduct } from '../../Requests/product';
 import {  useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
+import SingleProductCard from '../../components/SingeProductCard';
 
 
 
@@ -19,14 +20,16 @@ useEffect(() => {
 
 const singleProductState = useSelector(store => store.singleProduct)
 
-const { image, title, description, price, category } = singleProductState;
+console.log(singleProductState);
+
+// const { image, title, description, price, category } = singleProductState;
 
     
     
   return (
     <div>
        <div>
-         <hr class='solid' />
+         {/* <hr class='solid' /> */}
         </div>
             <div className={s.navigation}>
                 <div className={s.navigationMainPage}>
@@ -47,7 +50,9 @@ const { image, title, description, price, category } = singleProductState;
             </div>
              
              <div>
-                {title}
+                {
+                singleProductState.map( el => <SingleProductCard key={el.id} {...el}/>)
+                }
              </div>
     </div>
   )
