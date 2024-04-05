@@ -125,3 +125,14 @@
     color: #424436;
     border-radius: 10px;
 }
+
+.productContainer{
+    margin-left: 40px;
+    margin-top: 40px;
+    width:150px;
+    height: 574px;
+    top: 244px;
+    left: 40px;
+    gap: 32px;
+    margin-bottom: 80px;
+}

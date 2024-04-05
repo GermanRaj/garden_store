@@ -49,7 +49,7 @@ console.log(singleProductState);
                 </div>
             </div>
              
-             <div>
+             <div className={s.productContainer}>
                 {
                 singleProductState.map( el => <SingleProductCard key={el.id} {...el}/>)
                 }
