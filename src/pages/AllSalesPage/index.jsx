@@ -25,7 +25,6 @@ export default function AllSalesPage() {
       <div className={s.navigation}>
         <p className>Main page</p>
         <p>__</p>
-        <div></div>
         <p className={s.navigationAllSales}>All sales</p>
       </div>
       <div className={s.title}>
@@ -53,7 +52,7 @@ export default function AllSalesPage() {
             </select>
         </div>
     </div>
-    <AllProductsOnSalesContainer productsBySaleState ={productsBySaleState}/>    
+    <AllProductsOnSalesContainer productsBySaleState ={productsBySaleState}/>  
   </div>
   
   )

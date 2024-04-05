@@ -8,6 +8,8 @@ import CategoriesPage from './pages/CategoriesPage';
 import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
 import CategoryTitle from './pages/CategoryTitle';
+import SingleProductPage from './pages/SingleProductPage';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
         <Route path='/allproducts' element={<AllProductPage/>}></Route>
         <Route path='/allsales' element={<AllSalesPage/>}></Route>
         <Route path='/categories/:id' element={<CategoryTitle/>}></Route>
+        <Route path='/product/:id' element={<SingleProductPage/>}></Route>
       </Routes>
       <Footer/>
     </div>
