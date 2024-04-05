@@ -51,7 +51,7 @@ export default function AllSalesPage() {
             </select>
         </div>
     </div>
-    <AllProductsOnSalesContainer productsBySaleState ={productsBySaleState}/>    
+    <AllProductsOnSalesContainer productsBySaleState ={productsBySaleState}/>  
   </div>
   
   )
