@@ -39,18 +39,6 @@
     
 }
 
-.sale {
-    font-family: Montserrat;
-    width: 140px;
-    height:70px ;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 70.4px;
-    text-align: left;
-    margin-left: 40px;
-    color:#424436;
-    padding-top: 80px;
-}
 
 .categories_title {
     font-family: Montserrat;
@@ -127,17 +115,18 @@
         text-align: left;
         margin-left: 40px;
         color:#424436;
-        padding-top: 80px;
+        padding-top: 80px; 
+        
     }
     
    .dash{
-    display: flex;
     border: 1px solid #DDDDDD;
     width: 825px;
     height: 0px;
-    gap: 0px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
+    position: absolute;
+    top: 65%;
+    left: 32%;
    }
 
 
@@ -152,14 +141,12 @@
       text-align: center;
       padding: 8px 16px;
       border-radius: 12px;
-     color: #8B8B8B;       
+      color: #8B8B8B; 
+      position: absolute;     
+      top: 56%;
+      left: 90%;
     }
 
-    .navCat{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
 
     .categories_title {
         font-family: 'Montserrat';
@@ -172,16 +159,18 @@
         margin-left:40px ;
         color: #424436; 
         padding-top: 80px;
+
     }
    
     .dashOnsales{
-        display: flex;
         border: 1px solid #DDDDDD;
         width: 825px;
         height: 0px;
-        gap: 0px;
         border: 1px 0px 0px 0px;
-        opacity: 0px;
+        position: absolute;
+        top: 282%;
+        left: 32%;
+        
     }
 
     .navOnSales{
@@ -195,12 +184,22 @@
         text-align: center;
         padding: 8px 16px;
         border-radius: 12px;
-       color: #8B8B8B;
+        color: #8B8B8B;
+        position: absolute;     
+        top:280%;
+        left: 90%;
+    
+    } 
+
+    .position{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .navSales{
+    s.postition1{
+        position: relative;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        justify-content: space-between; 
     }
 
