@@ -1,3 +1,4 @@
+import React from 'react';
 import s from './index.module.css'
 import AllProductsOnSalesContainer from '../../components/AllProductsOnSalesContainer'
 import {  useDispatch, useSelector } from 'react-redux';
