@@ -11,6 +11,7 @@ export default function AllSalesPage() {
 
   const productsBySaleState = useSelector(store =>store.productsOnSales )
 
+
   const order = event => {
   dispatch(sortProductsOnSalesAction(event.target.value))
 }
@@ -23,7 +24,6 @@ export default function AllSalesPage() {
       <div className={s.navigation}>
         <p className>Main page</p>
         <p>__</p>
-        <div></div>
         <p className={s.navigationAllSales}>All sales</p>
       </div>
       <div className={s.title}>

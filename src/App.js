@@ -7,6 +7,8 @@ import CategoriesPage from './pages/CategoriesPage';
 import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
 import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
+import SingleProductPage from './pages/SingleProductPage';
+
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
         <Route path='/categories' element={<CategoriesPage/>}></Route>
         <Route path='/allproducts' element={<AllProductPage/>}></Route>
         <Route path='/allsales' element={<AllSalesPage/>}></Route>
-        
+        <Route path='/product/:id' element={<SingleProductPage />} />
       </Routes>
       <Footer/>
     </div>

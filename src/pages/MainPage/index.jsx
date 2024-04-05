@@ -2,9 +2,9 @@ import React from 'react'
 import ProductsOnSaleContainer from '../../components/ProductsOnSaleContainer'
 import s from './index.module.css'
 import CategoriesContainer from '../../components/CategoriesContainer'
-import image_img from './mediaMain/image.png'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 import DiscountForm from '../../components/DiscountForm'
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,9 +12,6 @@ export default function MainPage() {
 
   const background_styles = {
     backgroundImage: `url('${backGroundImageHeader}')`
-  }
-  const banner_styles = {
-    backgroundImage: `url('${image_img}')`
   }
 
   return (
@@ -25,21 +22,23 @@ export default function MainPage() {
     </header>
         <header>
               <section>
-                <div >
+                <div className={s.position} >
                     <h2 className={s.categories_title}>Categories</h2>
-                    <div className={s.navCat}>
                         <div className={s.dash}></div>
+                        <Link to= {`/categories/all`}>
                         <div className={s.navCategories}>All categories</div>
+                        </Link>
                     </div>
-                    <CategoriesContainer/>
-              </div>
+                      <CategoriesContainer/>
               </section>
                   <DiscountForm />
                       <section>
-                          <h2 className={s.sale}>Sale </h2>
-                          <div className={s.navSales}>
-                              <div className={s.dashOnsales}></div>
-                              <div className={s.navOnSales}>All sales</div>
+                          <div className={s.postition1}>
+                              <h2 className={s.sale}>Sale </h2>
+                                <div className={s.dashOnsales}></div>
+                                <Link to={`/allsales`}>
+                                <div className={s.navOnSales}>All sales</div>
+                                </Link>
                           </div>
                           <ProductsOnSaleContainer/>
                       </section>
