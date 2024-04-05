@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './index.module.css'
-import CategoryContainer from '../../components/CategoryContainer'
 import { Link } from 'react-router-dom'
+import CategoryContainer from '../../components/CategoryContainer'
 
 export default function CategoriesPage({id}) {
 
@@ -13,7 +13,7 @@ export default function CategoriesPage({id}) {
        <section>
                          <h2 className={s.category_titel}>Categories</h2>
                       
-                        <CategoryContainer/>
+                       <CategoryContainer/>
                   </section>
                  
     </div>
