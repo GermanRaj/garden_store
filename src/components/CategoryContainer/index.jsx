@@ -2,9 +2,9 @@ import React from 'react'
 import { getCategories } from '../../Requests/categories';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import CategoryCard from '../CategoryCard';
 import s from './index.module.css'
 import { useParams } from 'react-router-dom';
+import CategoryCard from '../CategoryCard';
 
 
 
@@ -16,7 +16,7 @@ export default function CategoryContainer() {
 
      dispatch(getCategories(id))
 
-  }, []);
+  },[]);
 
   const {id} = useParams();
 
@@ -28,8 +28,8 @@ const categoriesData = useSelector(store => store.categories);
     
     <div className={s.category_comtainer}>
       {
-       categoriesData.map(el => <CategoryCard key={el.id} {...el} />)
-       }
+        //  categoriesData.map(el => <CategoryCard key={el.id} {...el} />)
+      }
     </div>
   
   )
