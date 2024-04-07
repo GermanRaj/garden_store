@@ -29,7 +29,7 @@ console.log(singleProductState);
   return (
     <div>
        <div>
-         {/* <hr class='solid' /> */}
+         <hr class='solid' />
         </div>
             <div className={s.navigation}>
                 <div className={s.navigationMainPage}>

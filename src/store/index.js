@@ -5,12 +5,11 @@ import { categoriesReducer } from './reducers/categoriesReducers';
 import { productsByCategorieReducer } from './reducers/productsByCategorieReducer';
 import { productsPriceFilterReducer } from './reducers/minmaxPriceReducer';
 import { singleProductReducer } from './reducers/singleProductReducer';
-import { categoryReduser } from './reducers/categoryRedusers';
+
 
 
 const rootReducer = combineReducers({
 mainCategories: categoriesReducer,
-categories: categoryReduser,
 productsOnSales: productsOnSaleReducer,
 productsByCategories: productsByCategorieReducer,
 productPriceFilter: productsPriceFilterReducer,

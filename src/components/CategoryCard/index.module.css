@@ -1,12 +1,21 @@
 .category_card{
-    width: 316px;
+    width:248px;
+    height: 392px;
+    gap: 16px;
+}
+
+.category_card img {
+    width: 248px;
     height: 350px;
-    gap: 12px; 
-    font-family: 'Montserrat';
+    border-radius: 12px;
+}
+
+.category_card p {
+    font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
     text-align: center;
-    color: #424436; /*это же добавить в стили в sale (цвет текста)*/
-    }
+    padding-top: 16px;
+}
    
