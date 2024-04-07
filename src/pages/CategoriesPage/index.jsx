@@ -1,22 +1,23 @@
 import React from 'react'
-import s from './index.module.css'
 import CategoryContainer from '../../components/CategoryContainer'
-import { Link } from 'react-router-dom'
+import s from './index.module.css'
 
-export default function CategoriesPage({id}) {
+export default function CategoriesPage() {
 
  return (
-
-<Link> 
-    <div>
-       <section>
-                 <h2 className={s.category_titel}>Categories</h2>
-                  <CategoryContainer/>
-      </section>
-      
-    </div>
-    </Link>
-  )
+  <div>
+    <hr />
+        <div className={s.navigation}>
+          <div className={s.navigationMainPage}>
+            <p>Main page</p>
+            <p>__</p>
+        </div>
+            <div className={s.navigationCategories}>
+             <p>Categories</p>
+           </div>
+        </div>
+         <h2 className={s.categoriesTitle}>Categories</h2>
+  <CategoryContainer />
+</div>
+);
 }
-
-
