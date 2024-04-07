@@ -1,10 +1,14 @@
 import React from 'react'
 import { domen } from '../../domen'
 import s from './index.module.css'
+import {useDispatch} from 'react-redux'
 
-export default function SingleProductCard({title, image, discont_price , price, description }) {
+export default function SingleProductCard({id, title, image, discont_price , price, description, count }) {
 
     const img = domen+image;
+
+    const dispatch = useDispatch();
+    
   return (
     <div className={s.productCard}>
             <img src={img} alt={title} />
@@ -18,7 +22,7 @@ export default function SingleProductCard({title, image, discont_price , price, 
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
                                     <p>-</p>
-                                    <p>1</p>
+                                    <p>{count}</p>
                                     <p>+</p>
                                </div>
                                   <button>Add to cart</button>
