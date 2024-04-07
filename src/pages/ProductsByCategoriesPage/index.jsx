@@ -77,7 +77,7 @@ export default function ProductsByCategoriesPage() {
             </select>
         </div>
     </div>
-            <ProductsByCategorieContainer products={productsByCategorieState} />
+            {/* <ProductsByCategorieContainer products={productsByCategorieState} /> */}
         </div>
     );  
 }
