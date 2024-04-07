@@ -7,15 +7,13 @@ export default function CategoriesPage({id}) {
 
  return (
 
-<Link to={`/categories/${id}`}> 
+<Link> 
     <div>
-      
        <section>
-                         <h2 className={s.category_titel}>Categories</h2>
-                      
-                        <CategoryContainer/>
-                  </section>
-                 
+                 <h2 className={s.category_titel}>Categories</h2>
+                  <CategoryContainer/>
+      </section>
+      
     </div>
     </Link>
   )
