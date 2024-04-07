@@ -31,3 +31,4 @@ export const productsByCategorieReducer = (state = defaultState, action) =>{
     }
     return state
     }
+    

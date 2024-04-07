@@ -5,6 +5,7 @@ import { categoriesReducer } from './reducers/categoriesReducers';
 import { productsByCategorieReducer } from './reducers/productsByCategorieReducer';
 import { productsPriceFilterReducer } from './reducers/minmaxPriceReducer';
 import { singleProductReducer } from './reducers/singleProductReducer';
+import { cartReducer } from './reducers/cartReducer';
 
 
 
@@ -13,7 +14,8 @@ mainCategories: categoriesReducer,
 productsOnSales: productsOnSaleReducer,
 productsByCategories: productsByCategorieReducer,
 productPriceFilter: productsPriceFilterReducer,
-singleProduct: singleProductReducer
+singleProduct: singleProductReducer,
+cart: cartReducer
 });
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));
