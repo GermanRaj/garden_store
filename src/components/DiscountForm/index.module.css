@@ -61,7 +61,7 @@
 }
 
 .inputs > input::placeholder  {
-    color: white !important;
+    color: white;
 }
 
 

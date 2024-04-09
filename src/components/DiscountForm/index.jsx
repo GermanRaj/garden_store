@@ -1,22 +1,25 @@
 import React from 'react';
+import axios from 'axios';
 import s from './index.module.css';
 import image from './image.png';
 
 export default function DiscountForm() {
-    const usersData = [];
-
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
         const { name, phone_number, email } = event.target.elements;
 
-        const user = {
-            id: Date.now(),
+        const userData = {
             name: name.value,
             phone_number: phone_number.value,
             email: email.value
         };
 
-        usersData.push(user);
+        try {
+            const response = await axios.post('http://localhost:3333/sale/send', userData);
+            console.log(response.data);
+        } catch (error) {
+            console.error('Error while sending request:', error);
+        }
 
         event.target.reset();
     };
