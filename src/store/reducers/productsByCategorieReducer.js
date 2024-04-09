@@ -1,6 +1,6 @@
 import { act } from "react-dom/test-utils";
 
-const defaultState = {};
+const defaultState = [];
 
 const LOAD_PRODUCTS_BY_CATEGORIE = 'LOAD_PRODUCTS_BY_CATEGORIE'
 const SORT_PRODUCTS_BY_CATEGORIE = 'SORT_PRODUCTS_BY_CATEGORIE'
