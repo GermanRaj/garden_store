@@ -4,26 +4,21 @@ import { getProductsByCategorie } from '../../Requests/productsByCategories';
 import ProductsByCategorieCard from '../ProductsByCategorieCard';
 import s from './index.module.css'
 
-export default function ProductsByCategorieContainer({categoryId}) {
+export default function ProductsByCategorieContainer() {
 
     const dispatch = useDispatch();
-
-    
     
     useEffect(() => {
-        dispatch(getProductsByCategorie(categoryId));
-    }, [categoryId]);
+        dispatch(getProductsByCategorie);
+    }, []);
 
-    const productsByCategorie = useSelector(store => store.productsByCategorie);
+    const productsByCategorie = useSelector(store => store.productsByCategories);
 
-console.log(productsByCategorie);
+    console.log(productsByCategorie);
 
     return (
         <div className={s.byCategoriesContainer}>
-            {
-            // productsByCategorie && productsByCategorie.map(el => <ProductsByCategorieCard key={el.id} {...el} />)
-            
-            }
+            {productsByCategorie.map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
         </div>
     )
 }

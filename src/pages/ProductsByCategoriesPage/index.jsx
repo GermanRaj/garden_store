@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import React, { useEffect,} from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 import { getProductsByCategorie } from '../../Requests/productsByCategories';
-
+import ProductsByCategorieContainer from '../../components/ProductsByCategorieContainer';
 
 
 export default function ProductsByCategoriesPage() {
@@ -49,6 +49,7 @@ export default function ProductsByCategoriesPage() {
         </div>
     </div> */}
             {/* <ProductsByCategorieContainer products={productsByCategorieState} /> */}
+            <ProductsByCategorieContainer products={productsByCategorieState} />
         </div>
     );  
 }
