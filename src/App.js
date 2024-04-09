@@ -7,8 +7,8 @@ import AllProductPage from './pages/AllProductPage';
 import CategoriesPage from './pages/CategoriesPage';
 import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
-import CategoryTitle from './pages/CategoryTitle';
 import SingleProductPage from './pages/SingleProductPage';
+import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
 
 
 
@@ -21,8 +21,8 @@ function App() {
         <Route path='/categories' element={<CategoriesPage/>}></Route>
         <Route path='/allproducts' element={<AllProductPage/>}></Route>
         <Route path='/allsales' element={<AllSalesPage/>}></Route>
-        <Route path='/categories/:id' element={<CategoryTitle/>}></Route>
         <Route path='/product/:id' element={<SingleProductPage/>}></Route>
+        <Route path='/categories/:categoryId' element={<ProductsByCategoriesPage/>}></Route>
       </Routes>
       <Footer/>
     </div>

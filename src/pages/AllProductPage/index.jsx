@@ -49,7 +49,6 @@ export default function AllProductPage() {
             </select>
         </div>
         </div>
-
       <AllProductsContainer />
     </div>
   )

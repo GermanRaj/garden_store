@@ -1,8 +1,9 @@
 import { loadProductsByCategoriesAction } from "../store/reducers/productsByCategorieReducer"
 import { domen } from "../domen"
 
-export const getProductsByCategorie = (dispatch, categoryId) => {
-    fetch(`${domen}/categories/${categoryId}`)
+export const getProductsByCategorie = (id) => {
+    return dispatch=>{
+    fetch(`${domen}/categories/${id}`)
     .then(res => res.json())
     .then(json => dispatch(loadProductsByCategoriesAction(json)))
-}
+    }}

@@ -1,10 +1,10 @@
 import React from 'react'
 import ProductsOnSaleContainer from '../../components/ProductsOnSaleContainer'
 import s from './index.module.css'
-import CategoriesContainer from '../../components/CategoriesContainer'
 import backGroundImageHeader from './mediaMain/backGroundImageHeader.jpg'
 import DiscountForm from '../../components/DiscountForm'
 import { Link } from 'react-router-dom'
+import CategoriesContainerMain from '../../components/CategoriesContainerMain'
 
 
 
@@ -29,7 +29,7 @@ export default function MainPage() {
                         <div className={s.navCategories}>All categories</div>
                         </Link>
                     </div>
-                      <CategoriesContainer/>
+                      <CategoriesContainerMain/>
               </section>
                   <DiscountForm />
                       <section>

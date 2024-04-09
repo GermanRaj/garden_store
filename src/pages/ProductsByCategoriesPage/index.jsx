@@ -1,57 +1,28 @@
 import s from './index.module.css'
 import { useParams } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect,} from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 import { getProductsByCategorie } from '../../Requests/productsByCategories';
-import ProductsByCategorieContainer from '../../components/ProductsByCategorieContainer';
-import { loadProductsByCategoriesAction, sortProductsByCategoriesAction, showDiscountedProductsAction } from '../../store/reducers/productsByCategorieReducer';
+
 
 
 export default function ProductsByCategoriesPage() {
 
-    const { categoryId } = useParams();
+    const {categoryId} = useParams();
     
     const dispatch = useDispatch();
 
-    const productsByCategorieState = useSelector(store =>store.productsByCategories );
-
-    const [showDiscounted, setShowDiscounted] = useState(false);
-
-    
-
     useEffect(() => {
-        getProductsByCategorie(dispatch, categoryId)
-            .then(productsByCategorieState => {
-                dispatch(loadProductsByCategoriesAction(productsByCategorieState));
-            })
-            .catch(error => {
-                console.error('Error fetching products:', error);
-            });
-    }, [categoryId, dispatch]);
+        dispatch(getProductsByCategorie(categoryId))
+    }, [])
 
-    const order = event => {
-        dispatch(sortProductsByCategoriesAction(event.target.value))
-    }
-
-    const toggleDiscounted = () => {
-        setShowDiscounted(!showDiscounted);
-        if (!showDiscounted) {
-            dispatch(showDiscountedProductsAction());
-        } else {
-            getProductsByCategorie(dispatch, categoryId)
-                .then(productsByCategorieState => {
-                    dispatch(loadProductsByCategoriesAction(productsByCategorieState));
-                })
-                .catch(error => {
-                    console.error('Error fetching products:', error);
-                });
-        }
-    };
-
+    const productsByCategorieState = useSelector(store =>store.productsByCategories );
+      console.log(productsByCategorieState);
+   
     return (
         <div>
     
-    <div className={s.sortContainer}>
+    {/* <div className={s.sortContainer}>
         <div className={s.priceTitle}>
           <span>Price </span>
           <div>
@@ -76,8 +47,8 @@ export default function ProductsByCategoriesPage() {
                 <option value='price_desc'>By price (DESC)</option>
             </select>
         </div>
-    </div>
-            <ProductsByCategorieContainer products={productsByCategorieState} />
+    </div> */}
+            {/* <ProductsByCategorieContainer products={productsByCategorieState} /> */}
         </div>
     );  
 }

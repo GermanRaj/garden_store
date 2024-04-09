@@ -8,7 +8,8 @@ import SingleProductCard from '../../components/SingeProductCard';
 
 
 
-export default function SingleProductPage() {
+
+export default function SingleProductPage({title}) {
 
 const dispatch = useDispatch();
 
@@ -22,14 +23,13 @@ const singleProductState = useSelector(store => store.singleProduct)
 
 console.log(singleProductState);
 
-// const { image, title, description, price, category } = singleProductState;
 
     
     
   return (
     <div>
        <div>
-         {/* <hr class='solid' /> */}
+         <hr class='solid' />
         </div>
             <div className={s.navigation}>
                 <div className={s.navigationMainPage}>
@@ -45,7 +45,7 @@ console.log(singleProductState);
                     <p>__</p>
                 </div>
                 <div className={s.singleProductName}>
-                    <p >Name</p>
+                    <p>Title Name</p>
                 </div>
             </div>
              
