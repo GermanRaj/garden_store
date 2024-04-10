@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import React, { useEffect,} from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
 import { getProductsByCategorie } from '../../Requests/productsByCategories';
+import ProductsByCategorieContainer from '../../components/ProductsByCategorieContainer';
 
 
 
@@ -17,7 +18,6 @@ export default function ProductsByCategoriesPage() {
     }, [])
 
     const productsByCategorieState = useSelector(store =>store.productsByCategories );
-      console.log(productsByCategorieState);
    
     return (
         <div>
@@ -48,7 +48,9 @@ export default function ProductsByCategoriesPage() {
             </select>
         </div>
     </div> */}
-            {/* <ProductsByCategorieContainer products={productsByCategorieState} /> */}
+            <ProductsByCategorieContainer productsByCategorieState={productsByCategorieState}/>
         </div>
     );  
 }
+
+
