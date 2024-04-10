@@ -14,7 +14,7 @@ export const showDiscountedProductsAction = () => ({ type: SHOW_DISCOUNTED_PRODU
 
 export const productsByCategorieReducer = (state = defaultState, action) =>{
     if ( action.type === LOAD_PRODUCTS_BY_CATEGORIE ){
-        return action.payload.data
+        return action.payload
     } else if ( action.type === SORT_PRODUCTS_BY_CATEGORIE ){
         if( action.payload === 'name' ){
         state.sort((a, b) => a.title.localeCompare(b.title))

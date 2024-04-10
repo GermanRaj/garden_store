@@ -15,12 +15,12 @@ export default function ProductsByCategorieContainer({productsByCategorieState})
         dispatch(getProductsByCategorie(categoryId));
     }, []);
    
-    const {data, category} = productsByCategorieState
+    const {data, category} = productsByCategorieState;
 
     return (
         <div className={s.byCategoriesContainer}>
-            {data && data.map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
             <h2>{category && category.title}</h2>
+            {data && data.map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
         </div>
     )
 }
