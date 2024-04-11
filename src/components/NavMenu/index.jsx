@@ -23,7 +23,7 @@ export default function NavMenu() {
      <Link to='/categories'>Categories</Link>
      <Link to='/allproducts'>All products</Link>
      <Link to='/allsales'> All sales </Link>
-     <div className={s.basket} style={basket_styles}></div>
+     <Link to={'/cart'}><div className={s.basket} style={basket_styles}></div></Link>
     </div>
     </nav>
     </header>

@@ -2,13 +2,17 @@ import React from 'react'
 import { domen } from '../../domen'
 import s from './index.module.css'
 import {useDispatch} from 'react-redux'
+import { decrCountAction, incrCountAction, addToCartAction } from '../../store/reducers/cartReducer'
 
-export default function SingleProductCard({id, title, image, discont_price , price, description, count }) {
+import { useParams } from 'react-router-dom'
+
+export default function SingleProductCard({title, image, discont_price , price, description, count }) {
 
     const img = domen+image;
 
     const dispatch = useDispatch();
-    
+
+    const { id } = useParams();
   return (
     <div className={s.productCard}>
             <img src={img} alt={title} />
@@ -21,11 +25,11 @@ export default function SingleProductCard({id, title, image, discont_price , pri
                     </section>
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
-                                    <p>-</p>
+                                    <p onClick={() => dispatch(decrCountAction(id))}>-</p>
                                     <p>{count}</p>
-                                    <p>+</p>
+                                    <p onClick={() => dispatch(incrCountAction(id))} >+</p>
                                </div>
-                                  <button>Add to cart</button>
+                                  <button onClick={() => dispatch(addToCartAction({id, image, title, price}))} >Add to cart</button>
                             </section>
                                     <section className={s.blockfooter}>
                                         <h3>Description</h3>
