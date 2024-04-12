@@ -3,7 +3,7 @@ import s from './index.module.css'
 import { useEffect } from 'react';
 import { getSingleProduct } from '../../Requests/product';
 import {  useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import SingleProductCard from '../../components/SingeProductCard';
 
 

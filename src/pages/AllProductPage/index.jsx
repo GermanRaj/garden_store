@@ -3,6 +3,7 @@ import AllProductsContainer from '../../components/AllProductsContainer'
 import { useDispatch, useSelector} from 'react-redux';
 import s from './index.module.css'
 import { sortProductsOnSalesAction } from '../../store/reducers/productsOnSaleReducer';
+import { Link } from 'react-router-dom';
 
 export default function AllProductPage() {
 
@@ -19,7 +20,9 @@ export default function AllProductPage() {
        <hr class='solid' />
       </div>
       <div className={s.navigation}>
+        <Link to={'/'}>
         <p className>Main page</p>
+        </Link>
         <p>__</p>
         <div></div>
         <p className={s.navigationAllSales}>All products</p>

@@ -9,6 +9,7 @@ import AllSalesPage from './pages/AllSalesPage';
 import Footer from './components/Footer';
 import SingleProductPage from './pages/SingleProductPage';
 import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
+import CartPage from './pages/CartPage';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/allsales' element={<AllSalesPage/>}></Route>
         <Route path='/product/:id' element={<SingleProductPage/>}></Route>
         <Route path='/categories/:categoryId' element={<ProductsByCategoriesPage/>}></Route>
+        <Route path='/cart' element={<CartPage/>}></Route>
       </Routes>
       <Footer/>
     </div>
