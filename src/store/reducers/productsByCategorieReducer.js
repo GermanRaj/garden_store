@@ -26,7 +26,21 @@ export const productsByCategorieReducer = (state = defaultState, action) =>{
     return [...state]
     } else if (action.payload === SHOW_DISCOUNTED_PRODUCTS) {
         return state.filter(product => product.discont_price !== null)
-    }
+    } else if (action.type === SHOW_DISCOUNTED_PRODUCTS){
+        if(action.payload){
+            return state.map(el => {
+                if (el.price !== null){ el.visible = true
+                } else {
+                    el.visible = false
+                }
+                return el
+            })
+        } else {
+            return state.map(el => {
+                el.visible = true
+                return el
+            })
+        }
+      }
     return state
     }
-    

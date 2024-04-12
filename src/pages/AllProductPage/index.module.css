@@ -1,4 +1,3 @@
-
 .navigation{
     width: Hug (231px)px;
     height: Hug (36px)px;
@@ -73,7 +72,7 @@
 }
 
 .sortContainer{
-    width: 634px;
+    width: 908px;
     height: Fixed 36px;
     gap: 40px;
     opacity: 0px;
@@ -91,12 +90,12 @@
     display: flex;
 }
 
-.priceTitle >span {
+.priceTitle > span {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
     color: #424436;
 }
 
@@ -108,9 +107,10 @@ font-family: Montserrat;
 font-size: 16px;
 font-weight: 500;
 line-height: 20.16px;
-text-align: left;
+text-align: center;
 border-radius: 6px;
 padding-left: 16px;
+border: 1px solid #DDDDDD
 }
 
 .formTo{
@@ -120,13 +120,14 @@ padding-left: 16px;
     font-size: 16px;
     font-weight: 500;
     line-height: 20.16px;
-    text-align: left;
+    text-align: center;
     border-radius: 6px;
     padding-left: 16px;
+    border: 1px solid #DDDDDD
 }
 
 .sortedTitle{
-    width: Hug (285px)px;
+    width: Hug (290px)px;
     height: Hug (36px)px;
     gap: 16px;
     opacity: 0px;
@@ -138,8 +139,31 @@ padding-left: 16px;
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
     color: #424436;
+}
+
+.sortedTitle > label {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: #424436;
+    width: Hug (234px)px;
+    height: Hug (36px)px;
+    gap: 16px;
+    opacity: 0px;   
+}
+
+.custom-checkbox > input {
+    width: 36px;
+    height: 36px;
+    gap: 10px;
+    border-radius: 1px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;  
 }
 
 .byDefault{
@@ -152,6 +176,5 @@ padding-left: 16px;
     text-align: left;
     border-radius: 6px;
     padding-left: 16px;
+    border: 1px solid #DDDDDD
 }
-
-
