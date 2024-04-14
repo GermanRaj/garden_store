@@ -8,6 +8,11 @@ import {useDispatch} from 'react-redux'
 
 export default function AllProductsCard({id, image, title, discont_price, price}) {
 
+  const addItemToCart = (e) => {
+    e.preventDefault(); 
+    dispatch(addToCartAction({ id, image, title, price })); 
+  };
+
   const dispatch = useDispatch()
 
   return (
@@ -19,7 +24,7 @@ export default function AllProductsCard({id, image, title, discont_price, price}
             <p> ${discont_price}</p> 
             <p> ${price} </p> 
             <p>-{Math.floor(100-(discont_price*100/price))} %</p>
-            <button onClick={() => dispatch(addToCartAction({ id, image, title, price }))}>Add to cart</button>
+            <button onClick={addItemToCart}>Add to cart</button>
           </Link>
         </div>
     

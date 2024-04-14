@@ -1,0 +1,112 @@
+.order_form {
+top: 130px;    
+height: 582px;
+width: 548px;
+padding: 32px 0px 0px 0px;
+gap: 32px;
+border-radius: 12px;
+opacity: 0px;  
+margin: 32px;
+background: #F2F6D3;
+display: flex;
+flex-direction: column;
+margin-right: 80px;
+}
+
+.order_form > span {
+width: 484px;
+height: 44px;
+gap: 0px;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 700;
+line-height: 44px;
+text-align: left;
+color: #424436;
+
+}
+
+.order_form > p {
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 500;
+line-height: 52px;
+text-align: left;
+color: #8B8B8B;
+width: 148px;
+height: 52px;
+gap: 0px;
+opacity: 0px;
+}
+
+.total_sum_function { 
+width: 250px;
+height: 70px;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 64px;
+font-weight: 700;
+line-height: 70.4px;
+text-align: left;
+color: #424436;
+margin-right: 40px;
+margin-left: 250px;
+}
+
+.order_container {  
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+justify-content: space-between;
+width: 484px;
+height: 58px;
+padding: 16px 32px 16px 32px;
+gap: 10px;
+border-radius: 12px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+}
+
+
+.inputs {
+display: flex;
+flex-direction: column;
+gap: 16px;
+align-items: center;
+width: 100%;
+}
+
+.inputs > input {
+width: 484px;
+height: 58px;
+padding: 16px 32px 16px 32px;
+gap: 10px;
+border-radius: 12px;
+border: 1px solid #DDDDDD;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 500;
+line-height: 26px;
+text-align: left;
+}
+
+.order_container > button {
+background: #92A134;
+width: 484px;
+height: 58px;
+padding: 16px 32px 16px 32px;
+gap: 10px;
+border-radius: 12px;
+border: 1px solid #DDDDDD;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+background: #92A134;
+}
+

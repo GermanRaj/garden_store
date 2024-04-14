@@ -1,8 +1,8 @@
 import React from 'react'
 import { domen } from '../../domen'
-import s from './index.module.css'
 import {useDispatch} from 'react-redux'
 import { decrCountAction, incrCountAction, deleteCartItemAction } from '../../store/reducers/cartReducer'
+
 
 export default function CartCard({id, image, title, price, discont_price, count}) {
 
