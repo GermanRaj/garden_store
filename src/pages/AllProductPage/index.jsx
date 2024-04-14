@@ -47,7 +47,7 @@ const order = event => {
         <div className={s.sortedTitle}>
               <label>
                 <span>Discounted items</span>
-                <input type='checkbox' checked={checked} onChange={handleCheck}
+                <input className={s.checkbox} type='checkbox' checked={checked} onChange={handleCheck}
                 onClick={handleCheck} />
               </label>
 

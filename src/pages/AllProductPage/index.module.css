@@ -156,7 +156,7 @@ border: 1px solid #DDDDDD
     opacity: 0px;   
 }
 
-.custom-checkbox > input {
+.checkbox {
     width: 36px;
     height: 36px;
     gap: 10px;
