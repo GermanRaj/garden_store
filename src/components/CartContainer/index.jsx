@@ -5,14 +5,21 @@ import s from './index.module.css'
 import Modal from '../Modal'
 
 
+
+
 export default function CartContainer() {
+
+  
+
+  
 
     const [modalActive, setModalActive] = useState(false)
 
     const cartState = useSelector(store => store.cart)
 
   return (
-    <div>
+    <div className={s.container}>
+      <h1>Shopping cart</h1>
         {
             cartState.map(el => <CartCard key={el.id} {...el}/>)
         }
@@ -21,3 +28,5 @@ export default function CartContainer() {
     </div>
   )
 }
+
+

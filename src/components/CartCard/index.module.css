@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: start;
+    
+    
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.card button {
+    padding: 0 5px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.card p:last-child {
+    cursor: pointer;
+    
+
+}
+
+.card p:last-child(4) {
+    cursor: pointer;
+    
+    
+
+}
+
+
+.card p {
+    font-family: 'Montserrat';
+    font-size: 10px;
+    line-height: 15px;
+    color: #424436;
+    margin-right: 32px;
+    margin-left: 30px;
+   
+   
+    
+}

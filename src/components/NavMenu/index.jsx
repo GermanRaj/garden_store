@@ -8,6 +8,7 @@ import basket_buy from './media/icon_garden.png'
 
 export default function NavMenu() {
 
+
   const basket_styles= {
     backgroundImage: `url('${basket_buy}')`
 
