@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import AllProductsContainer from '../../components/AllProductsContainer'
 import { useDispatch, useSelector} from 'react-redux';
 import s from './index.module.css'
 import { sortProductsOnSalesAction } from '../../store/reducers/productsOnSaleReducer';
-import { Link } from 'react-router-dom';
 
 export default function AllProductPage() {
 
- const dispatch = useDispatch();
+const [ checked, setChecked ] = useState(false);
 
-  const allProductsByState = useSelector(store =>store.productsOnSales )
+const handleCheck = () => setChecked(!checked);
+console.log(checked);
 
-  const order = event => {
+const dispatch = useDispatch();
+
+const allProductsByState = useSelector(store =>store.productsOnSales )
+
+const order = event => {
     dispatch(sortProductsOnSalesAction(event.target.value))}
 
   return (
@@ -20,9 +24,7 @@ export default function AllProductPage() {
        <hr class='solid' />
       </div>
       <div className={s.navigation}>
-        <Link to={'/'}>
         <p className>Main page</p>
-        </Link>
         <p>__</p>
         <div></div>
         <p className={s.navigationAllSales}>All products</p>
@@ -43,16 +45,22 @@ export default function AllProductPage() {
     </div>
 
         <div className={s.sortedTitle}>
+              <label>
+                <span>Discounted items</span>
+                <input className={s.checkbox} type='checkbox' checked={checked} onChange={handleCheck}
+                onClick={handleCheck} />
+              </label>
+
            <span>Sorted </span>
             <select onInput={order} className={s.byDefault}>
                 <option value='by_default'>By default</option>
                 <option value='name'>By name (A-Z)</option>
                 <option value='price_asc'>By price (ASC)</option>
                 <option value='price_desc'>By price (DESC)</option>
-            </select>
+              </select>
         </div>
         </div>
-      <AllProductsContainer />
+      <AllProductsContainer allProductsByState={allProductsByState} />
     </div>
   )
 }

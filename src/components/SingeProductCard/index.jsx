@@ -2,9 +2,9 @@ import React from 'react'
 import { domen } from '../../domen'
 import s from './index.module.css'
 import {useDispatch} from 'react-redux'
-import { decrCountAction, incrCountAction, addToCartAction } from '../../store/reducers/cartReducer'
-
+import {addToCartAction } from '../../store/reducers/cartReducer'
 import { useParams } from 'react-router-dom'
+import { decrementCountProductAction, incrementCountProductAction } from '../../store/reducers/singleProductReducer'
 
 export default function SingleProductCard({title, image, discont_price , price, description, count }) {
 
@@ -13,6 +13,8 @@ export default function SingleProductCard({title, image, discont_price , price, 
     const dispatch = useDispatch();
 
     const { id } = useParams();
+
+    
   return (
     <div className={s.productCard}>
             <img src={img} alt={title} />
@@ -25,11 +27,11 @@ export default function SingleProductCard({title, image, discont_price , price, 
                     </section>
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
-                                    <p onClick={() => dispatch(decrCountAction(id))}>-</p>
+                                    <p onClick={()=>dispatch(decrementCountProductAction())}>-</p>
                                     <p>{count}</p>
-                                    <p onClick={() => dispatch(incrCountAction(id))} >+</p>
+                                    <p onClick={()=>dispatch(incrementCountProductAction())} >+</p>
                                </div>
-                                  <button onClick={() => dispatch(addToCartAction({id, image, title, price}))} >Add to cart</button>
+                                  <button onClick={()=>dispatch(addToCartAction({id, image, title, price}))} >Add to cart</button>
                             </section>
                                     <section className={s.blockfooter}>
                                         <h3>Description</h3>

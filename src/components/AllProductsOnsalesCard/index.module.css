@@ -34,8 +34,6 @@
     margin-top: 20px;
     margin-left: 32px;
     margin-right: 32px;
-
-
 }
 
 .productCard p:nth-child(2) {
@@ -46,8 +44,7 @@
     text-align: left;
     margin-top: 16px;
     margin-left: 32px;
-    
-    
+    color: #424436;
 }
 
 .productCard p:nth-child(3) {
@@ -105,15 +102,18 @@
     left: 15px;
     opacity: 0;
     
+    
 }
 
 .productCard button:active {
     background-color: #424436;
+    outline: none;
 }
 
 .productCard button:hover{
    opacity: 100;
 }
+
 
 
 
