@@ -5,6 +5,7 @@ import s from './index.module.css'
 import Modal from '../Modal'
 
 
+
 export default function CartContainer() {
 
     const [modalActive, setModalActive] = useState(false)
