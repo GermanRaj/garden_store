@@ -17,7 +17,7 @@ export default function CartContainer() {
         {
             cartState.map(el => <CartCard key={el.id} {...el}/>)
         }
-        <button onClick={()=> setModalActive(true) }>ORDER</button>
+        {/* <button onClick={()=> setModalActive(true) }>ORDER</button> */}
         {/* <Modal active={modalActive} setActive={setModalActive}/> */}
     </div>
   )

@@ -7,66 +7,62 @@ import { Link } from 'react-router-dom';
 
 export default function CartPage() {
 
-const cartState = useSelector(store => store.cart);
+  const cartState = useSelector(store => store.cart);
 
-    useEffect(() => {
-        localStorage.setItem('cart', JSON.stringify(cartState))
-      }, [cartState]);
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cartState))
+  }, [cartState]);
 
-const orderSubmit = event => {
-  event.preventDefault();
+  const orderSubmit = event => {
+    event.preventDefault();
 
-const { name, phone_number, email } = event.target;
+    const { name, phone_number, email } = event.target;
 
-const userData = {
-  name: name.value,
-  phone_number: phone_number.value,
-  email: email.value
-}
+    const userData = {
+      name: name.value,
+      phone_number: phone_number.value,
+      email: email.value
+    }
 
-event.target.reset()
-}
+    event.target.reset()
+  }
 
   return (
     <div>
-        <CartContainer/>
-        <div className={s.order_form}>
-          <span>Order details</span>
-          <p>items</p>
-          <p>Total</p>
-          <div className={s.total_sum_function}>Total sum $ function </div>
-            <div className={s.order_container}>
-                <form className={s.order_container} onSubmit={orderSubmit}>
-                    <div className={s.inputs}>
-                        <input type="text" placeholder="Name" name="name" />
-                        <input type="text" placeholder="Phone number" name="phone_number" />
-                        <input type="text" placeholder="Email" name="email" />
-                    </div>
-                    <button type="submit">Order</button>
-                </form>
-              </div>
-          </div>
-    </div>
-  )
-}
-     {
-        cartState.length ===0
-        ? 
+      {cartState.length === 0 ? (
         <section>
           <div className={s.line}></div>
           <div className={s.position}>
-              <h2 className={s.title}>Shopping cart</h2>
-                 <p>Back to the store</p>
-                 <div className={s.dash}></div>
+            <h2 className={s.title}>Shopping cart</h2>
+            <p>Back to the store</p>
+            <div className={s.dash}></div>
           </div>
           <p className={s.text}>Looks like you have no items in your basket currently</p>
-          <Link to={'/'}> 
-          <button className={s.btn}>Continue Shopping</button>
+          <Link to={'/'}>
+            <button className={s.btn}>Continue Shopping</button>
           </Link>
         </section>
-        : <CartContainer/>
-      }
+      ) : (
+        <div>
+          <CartContainer />
+          <div className={s.order_form}>
+            <span>Order details</span>
+            <p>items</p>
+            <p>Total</p>
+            <div className={s.total_sum_function}>Total sum $ function </div>
+            <div className={s.order_container}>
+              <form className={s.order_container} onSubmit={orderSubmit}>
+                <div className={s.inputs}>
+                  <input type="text" placeholder="Name" name="name" />
+                  <input type="text" placeholder="Phone number" name="phone_number" />
+                  <input type="text" placeholder="Email" name="email" />
+                </div>
+                <button type="submit">Order</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
-
