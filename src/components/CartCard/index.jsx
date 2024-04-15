@@ -7,6 +7,7 @@ import s from './index.module.css'
 
 
 
+
 export default function CartCard({id, image, title, price, discont_price, count}) {
 
     const dispatch = useDispatch()
