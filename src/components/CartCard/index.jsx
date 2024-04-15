@@ -20,6 +20,7 @@ export default function CartCard({id, image, title, price, discont_price, count}
                 >+</button>
                 <p onClick={()=>dispatch(deleteCartItemAction(id))}
                 >X</p>
+
             
           </div>
       )
