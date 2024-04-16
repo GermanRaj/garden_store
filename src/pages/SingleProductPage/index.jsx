@@ -9,7 +9,7 @@ import SingleProductCard from '../../components/SingeProductCard';
 
 
 
-export default function SingleProductPage({title}) {
+export default function SingleProductPage() {
 
 const dispatch = useDispatch();
 
@@ -20,35 +20,13 @@ useEffect(() => {
 }, []);
 
 const singleProductState = useSelector(store => store.singleProduct)
-
-console.log(singleProductState);
+  
 
 
     
     
   return (
     <div>
-       <div>
-         <hr class='solid' />
-        </div>
-            <div className={s.navigation}>
-                <div className={s.navigationMainPage}>
-                    <p>Main page</p>
-                    <p>__</p>
-                </div>
-                <div className={s.navigationCategories}>
-                    <p>Categories</p>
-                    <p>__</p>
-                </div>
-                <div className={s.navigationCategoryName}>
-                    <p >Tools And Equipment</p>
-                    <p>__</p>
-                </div>
-                <div className={s.singleProductName}>
-                    <p>Title Name</p>
-                </div>
-            </div>
-             
              <div className={s.productContainer}>
                 {
                 singleProductState.map( el => <SingleProductCard key={el.id} {...el}/>)
