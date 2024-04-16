@@ -22,7 +22,7 @@
 }
 
 .productCard p:nth-child(1){
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
@@ -39,7 +39,7 @@
 }
 
 .productCard p:nth-child(2) {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
@@ -56,7 +56,7 @@
     height: 26px;
     gap: 0px;
     opacity: 0px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
