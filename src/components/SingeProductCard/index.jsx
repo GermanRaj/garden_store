@@ -1,21 +1,50 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { domen } from '../../domen'
 import s from './index.module.css'
-import {useDispatch} from 'react-redux'
+import {useDispatch, useSelector} from 'react-redux'
 import {addToCartAction } from '../../store/reducers/cartReducer'
-import { useParams } from 'react-router-dom'
-import { decrementCountProductAction, incrementCountProductAction } from '../../store/reducers/singleProductReducer'
+import { getCategoriesList } from '../../Requests/categories'
+import { Link } from 'react-router-dom'
 
-export default function SingleProductCard({title, image, discont_price , price, description, count }) {
+
+export default function SingleProductCard({id, categoryId, title, image, discont_price , price, description, count }) {
 
     const img = domen+image;
 
     const dispatch = useDispatch();
 
-    const { id } = useParams();
+    useEffect(() =>{
+        dispatch(getCategoriesList)
+    }, []);
 
+    const categories_data = useSelector(store => store.mainCategories)
+
+    const get_category_title = categoryId => {
+        const category = categories_data.find(el => el.id === categoryId);
+        return category ? category.title : 'Loading...';
+     }
     
   return (
+    <div>
+            <section className={s.navigation}>
+            <Link to='/'>
+               <div className={s.navigationMainPage}> 
+                    <p>Main page</p>
+                    <p>__</p> 
+               </div>
+            </Link>
+            <Link to='/categories'>
+               <div className={s.navigationCategories}> 
+                     <p>Categories</p>
+                     <p>__</p> </div>
+            </Link>
+            <Link to={`/products/${categoryId}`}>
+               <div className={s.navigationCategoryName}>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
+            </Link>
+            <Link to={`/product/${id}`}>
+               <div className={s.singleProductName}> { title } </div>
+            </Link>
+         </section>
     <div className={s.productCard}>
             <img src={img} alt={title} />
                 <div className={s.textPosition}>
@@ -27,9 +56,9 @@ export default function SingleProductCard({title, image, discont_price , price, 
                     </section>
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
-                                    <p onClick={()=>dispatch(decrementCountProductAction())}>-</p>
+                                    <p>-</p>
                                     <p>{count}</p>
-                                    <p onClick={()=>dispatch(incrementCountProductAction())} >+</p>
+                                    <p>+</p>
                                </div>
                                   <button onClick={()=>dispatch(addToCartAction({id, image, title, price}))} >Add to cart</button>
                             </section>
@@ -40,5 +69,6 @@ export default function SingleProductCard({title, image, discont_price , price, 
                                     </section>
                 </div>
     </div>
+</div>
   )
 }
