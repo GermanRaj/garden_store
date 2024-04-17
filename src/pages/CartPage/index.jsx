@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom';
 
 export default function CartPage() {
 
-   const dispatch = useDispatch();
 
+   const dispatch = useDispatch();
+  
   const cartState = useSelector(store => store.cart);
+
 
   const totalPrice = cartState.reduce((acc, el) => acc + (el.price * el.count), 0);
 
@@ -17,16 +19,18 @@ export default function CartPage() {
     localStorage.setItem('cart', JSON.stringify(cartState))
   }, [cartState]);
 
-  const orderSubmit = event => {
+const totalPrice = cartState.reduce((acc, el) => acc + (el.price * el.count), 0)
+  
+const orderSubmit = event => {
     event.preventDefault();
 
-    const { name, phone_number, email } = event.target;
+const { name, phone_number, email } = event.target;
 
-    const userData = {
-      name: name.value,
-      phone_number: phone_number.value,
-      email: email.value
-    }
+const userData = {
+    name: name.value,
+    phone_number: phone_number.value,
+    email: email.value
+  }
 
     event.target.reset()
   }
@@ -53,19 +57,15 @@ export default function CartPage() {
             <span>Order details</span>
             <p>items</p>
             <p>Total</p>
-            <div className={s.total_sum_function}>Total sum $ function </div>
-            <div className={s.order_container}>
-              <form className={s.order_container} onSubmit={orderSubmit}>
-                <div className={s.inputs}>
+            <div className={s.total_price}>{totalPrice}</div>
+                <div className={s.inputs} onSubmit={orderSubmit}>
                   <input type="text" placeholder="Name" name="name" />
                   <input type="text" placeholder="Phone number" name="phone_number" />
                   <input type="text" placeholder="Email" name="email" />
-                </div>
                 <button type="submit">Order</button>
-              </form>
+                </div>
             </div>
           </div>
-        </div>
       )}
     </div>
   )
