@@ -9,7 +9,7 @@ footer {
 }
 
 footer > h1 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 64px;
     font-weight: 700;
     color: #424436;
@@ -31,7 +31,7 @@ footer > h1 {
 }
 
 .info_card > h2 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #8B8B8B;
     font-size: 20px;
     font-weight: 500;
@@ -41,7 +41,7 @@ footer > h1 {
 }
 
 .info_card > h3 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     color: #424436;
     font-size: 40px;
     font-weight: 600;

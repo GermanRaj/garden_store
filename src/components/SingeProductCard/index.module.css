@@ -31,7 +31,7 @@ position: relative;
 }
 
 .PricesAndDiscounts p:nth-child(1){
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 64px;
     font-weight: 700;
     line-height: 70.4px;
@@ -39,7 +39,7 @@ position: relative;
 }
 
 .PricesAndDiscounts p:nth-child(2){
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 40px;
     font-weight: 500;
     line-height: 52px;
@@ -60,7 +60,7 @@ position: relative;
     height:34px;
     padding: 4px 8px 4px 8px;
     gap: 10px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
@@ -116,7 +116,7 @@ padding-top: 15px;
     height:58px;
     border: 1px solid #DDDDDD;
     border-radius: 10px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     color: #8B8B8B;
@@ -132,7 +132,7 @@ padding-top: 15px;
     gap: 10px;
     background-color: #92A134;
     border-radius: 10px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
@@ -142,7 +142,7 @@ padding-top: 15px;
 }
 
 .productCard h3 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 40px;
     font-weight: 700;
     line-height: 44px;
@@ -161,7 +161,7 @@ padding-top: 15px;
 }
 
 .blockfooter h3 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
@@ -172,7 +172,7 @@ padding-top: 15px;
 }
 
 .description{
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
     line-height: 20.8px;

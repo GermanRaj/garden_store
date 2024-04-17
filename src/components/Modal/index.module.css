@@ -31,7 +31,7 @@
 .modal_content > p:nth-child(1){
     width: 424px;
     height: 44px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 40px;
     font-weight: 600;
     line-height: 44px;
@@ -44,7 +44,7 @@
     padding-top: 24px;
     width: 424px;
     height: 104px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
@@ -55,7 +55,7 @@
 .modal_content > p:nth-child(3){
     width: 424px;
     height: 104px;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;

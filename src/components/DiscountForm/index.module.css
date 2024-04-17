@@ -11,7 +11,7 @@
 }
 
 .block_form > h1 {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 64px;
     font-weight: 700;
     line-height: 70.4px;
@@ -50,7 +50,7 @@
     border-radius: 6px;
     padding: 16px 32px 16px 32px;
     border: 1px solid #FFFFF1;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
@@ -70,7 +70,7 @@
     height: 58px;
     border-radius: 6px;
     background: #FFFFF1;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
