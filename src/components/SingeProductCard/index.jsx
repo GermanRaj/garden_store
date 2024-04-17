@@ -39,7 +39,10 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                      <p>__</p> </div>
             </Link>
             <Link to={`/products/${categoryId}`}>
-               <div className={s.navigationCategoryName}>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
+                <div className={s.navigationCategoryName}>
+                        <div className={s.categoryStyle}>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
+                        <p>__</p>
+               </div>
             </Link>
             <Link to={`/product/${id}`}>
                <div className={s.singleProductName}> { title } </div>

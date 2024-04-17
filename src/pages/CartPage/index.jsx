@@ -6,14 +6,9 @@ import s from './index.module.css'
 import { Link } from 'react-router-dom';
 
 export default function CartPage() {
-
-
-   const dispatch = useDispatch();
-  
+ 
   const cartState = useSelector(store => store.cart);
 
-
-  const totalPrice = cartState.reduce((acc, el) => acc + (el.price * el.count), 0);
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartState))
