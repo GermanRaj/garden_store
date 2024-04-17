@@ -11,8 +11,6 @@ export default function CartContainer() {
 
   
 
-  
-
     const [modalActive, setModalActive] = useState(false)
 
     const cartState = useSelector(store => store.cart)

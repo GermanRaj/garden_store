@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CartContainer from '../../components/CartContainer'
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
@@ -7,7 +7,11 @@ import { Link } from 'react-router-dom';
 
 export default function CartPage() {
 
+   const dispatch = useDispatch();
+
   const cartState = useSelector(store => store.cart);
+
+  const totalPrice = cartState.reduce((acc, el) => acc + (el.price * el.count), 0);
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartState))

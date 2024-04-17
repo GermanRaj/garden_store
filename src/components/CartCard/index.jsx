@@ -14,16 +14,16 @@ export default function CartCard({id, image, title, price, discont_price, count}
     return (
           <div className={s.card}>
                 <img src={`${domen}${image}`} alt={title} />
-                <p>{title}</p>
+                <h6>{title}</h6>
                 <p>{discont_price}</p>
                 <button onClick={() => dispatch(decrCountAction(id))}
                 >-</button>
                  <p>{count}</p>
                 <button onClick={() =>dispatch(incrCountAction(id))}
                 >+</button>
-                <p>{price * count} $</p>
-                <p onClick={()=>dispatch(deleteCartItemAction(id))}
-                >X</p>
+                <h4>${price * count}</h4>
+                <h6 onClick={()=>dispatch(deleteCartItemAction(id))}
+                >X</h6>
                 
 
             
