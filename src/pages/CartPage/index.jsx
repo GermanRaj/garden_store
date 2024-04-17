@@ -4,11 +4,18 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import s from './index.module.css'
 import { Link } from 'react-router-dom';
+import Modal from '../../components/Modal';
+
+
 
 export default function CartPage() {
+
+  const [modalActive, setModalActive ] = useState(false);
+
+ const openModalWindow = () => setModalActive(true)
+ const closeModalWindow = () => setModalActive(false)
  
   const cartState = useSelector(store => store.cart);
-
 
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartState))
@@ -32,6 +39,7 @@ const userData = {
 
   return (
     <div>
+      <Modal closeModalWindow={closeModalWindow} modalActive={modalActive}/>
       {cartState.length === 0 ? (
         <section>
           <div className={s.line}></div>
@@ -57,8 +65,9 @@ const userData = {
                   <input type="text" placeholder="Name" name="name" />
                   <input type="text" placeholder="Phone number" name="phone_number" />
                   <input type="text" placeholder="Email" name="email" />
-                <button type="submit">Order</button>
+                 <button onClick={openModalWindow} type="submit">Order</button> 
                 </div>
+                
             </div>
           </div>
       )}

@@ -10,6 +10,7 @@ background: #F2F6D3;
 display: flex;
 flex-direction: column;
 margin-right: 80px;
+margin-bottom: 100px;
 }
 
 .order_form > span {
@@ -70,6 +71,7 @@ flex-direction: column;
 gap: 16px;
 align-items: center;
 width: 100%;
+
 }
 
 .inputs > input {
@@ -104,6 +106,7 @@ font-weight: 600;
 line-height: 26px;
 text-align: center;
 color: #FFFFFF;
+cursor: pointer;
 }
 
 

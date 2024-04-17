@@ -13,7 +13,11 @@ import CartPage from './pages/CartPage';
 
 
 
+
 function App() {
+   
+
+
   return (
     <div>
     <NavMenu />
