@@ -197,6 +197,7 @@ padding-top: 15px;
     margin-left: 40px;
     display: flex;
     flex-direction: row;
+    margin-bottom: 40px;
  
  }
  
@@ -265,35 +266,62 @@ padding-top: 15px;
  }
  
  .navigationCategoryName{
-     display: flex;
-     flex-direction: row;
- }
- 
- .navigationCategoryName p:first-child{
-     width: 210px;
+     width:120px;
      height:36px;
-     padding: 8px 16px 8px 16px;
      gap: 10px;
      border-radius: var(--radiussmall);
+     border: 1px 0px 0px 0px;
      opacity: 0px;
      font-family: Montserrat;
      font-size: 16px;
      font-weight: 500;
      line-height: 20.16px;
-     text-align: left;
+     text-align: center;
      border: 1px solid #DDDDDD;
      color: #8B8B8B;
      border-radius: 10px;
- }
+    }
+
+     .navigationCategoryName{
+         display: flex;
+         flex-direction: row;
+         margin-right: 10px;
+
+     }
+
+     .navigationCategoryName >p {
+        width: 16px;
+        height: 0px;
+        gap: 0px;
+        opacity: 0px;
+        color: #DDDDDD;
+        font-size: large;
+        margin-left: 9px;
+     }
+     
  
- .navigationCategoryName p:last-child{
-     width: 16px;
-     height: 0px;
-     gap: 0px;
-     opacity: 0px;
-     color: #DDDDDD;
-     font-size: large;
- }
+ 
+    .categoryStyle{
+        width: 220px;
+        height:36px;
+        padding: 8px 16px 8px 16px;
+        gap: 10px;
+        border-radius: var(--radiussmall);
+        opacity: 0px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        text-align: left;
+        color: #8B8B8B;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        
+        
+ } 
+ 
+
  
  
  .singleProductName {
@@ -312,5 +340,9 @@ padding-top: 15px;
      border: 1px solid #DDDDDD;
      color: #424436;
      border-radius: 10px;
+     margin-left: 6px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
  }
 
