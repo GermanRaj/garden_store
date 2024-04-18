@@ -116,7 +116,6 @@ cursor: pointer;
     height: 0px;
     border: 1px 0px 0px 0px; 
     margin-top: 28px;
-    
 }
 
 .title{
@@ -138,7 +137,7 @@ cursor: pointer;
     width: 170px;
     height: 36px;
     gap: 10px;
-    border-radius: var(--radiussmall);
+    border-radius: 12px;
     border: 1px 0px 0px 0px;
     border-radius: 12px;
     color: #8B8B8B; 
@@ -179,11 +178,12 @@ cursor: pointer;
     height: 58px;
     padding: 16px 56px 16px 56px;
     gap: 10px;
-    border-radius: var(--radiussmall);
+    border-radius: 12px;
     margin-left: 20px;
     border-radius: 12px;
     background-color: #92A134;
-    color: #FFFFFF;font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
