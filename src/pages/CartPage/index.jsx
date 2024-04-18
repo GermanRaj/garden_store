@@ -67,7 +67,6 @@ const userData = {
                   <input type="text" placeholder="Email" name="email" />
                  <button onClick={openModalWindow} type="submit">Order</button> 
                 </div>
-                
             </div>
           </div>
       )}

@@ -3,44 +3,38 @@
     justify-content: flex-start;
     padding: 10px;
     align-items: start;
-    gap: 15px;
-    border: 1px solid rgb(207, 196, 196);
     width: 50%;
     margin: 20px;
-    border-radius: 20px;
-    
-   
-    
-
-    
-      
+    background-color: #FFFFFF;
+    width: 780px;
+    height: 180px;
+    gap: 32px;
+    border-radius: 12px;
+    border: 1px solid #DDDDDD
 }
 
 .card img {
-    height: 200px;
-    width: 180px;
-    object-fit: contain;
-    border: 1px solid rgba(221, 221, 221, 1);
-    
-    
-   
-
+    top: 130px;
+    display: grid;
+    height: 180px;
+    width: 200px;
+    border: 1px solid #DDDDDD;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 .card button {
-    padding: 0 5px;
     cursor: pointer;
-    border: 1px solid 
-    rgba(221, 221, 221, 1);
-    
-     
+    width: 58px;
+    height: 58px;
+    gap: 0px;
+    border-radius: 12px;
+    opacity: 0px;
+    border: 1px solid #DDDDDD
 }
 
 .card p:last-child {
     cursor: pointer;
-   
-    
-
 }
 
 .card p {
@@ -50,15 +44,16 @@
     color: #424436;
     margin-right: 10px;
     margin-left: 10px;
-
-    
-      
 }
+
  .card > h6 {
     color: black;
     cursor: pointer;
     justify-content: flex-start;
-   
-
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
  }
 
