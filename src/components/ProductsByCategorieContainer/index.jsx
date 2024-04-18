@@ -20,7 +20,9 @@ export default function ProductsByCategorieContainer({productsByCategorieState})
     return (
         <div className={s.byCategoriesContainer}>
             <h2>{category && category.title}</h2>
-            {data && data.map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
+            <div className={s.categoriesCards}>
+                {data && data.map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
+            </div>
         </div>
     )
 }
