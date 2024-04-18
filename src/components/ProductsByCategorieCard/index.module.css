@@ -29,12 +29,12 @@
     font-weight: 500;
     line-height: 26px;
     text-align: left;
-    color: #424436;
-
+    color: #282828;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 .productPrice {
     display: flex;
     flex-direction:row;

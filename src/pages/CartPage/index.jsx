@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CartContainer from '../../components/CartContainer'
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import s from './index.module.css'
 import { Link } from 'react-router-dom';
 import Modal from '../../components/Modal';
@@ -60,7 +60,7 @@ const userData = {
             <span>Order details</span>
             <p>items</p>
             <p>Total</p>
-            <div className={s.total_price}>{totalPrice}</div>
+            <div className={s.total_price}>${totalPrice}</div>
                 <div className={s.inputs} onSubmit={orderSubmit}>
                   <input type="text" placeholder="Name" name="name" />
                   <input type="text" placeholder="Phone number" name="phone_number" />
