@@ -40,7 +40,7 @@
     flex-direction:row;
     gap: 16px;
 }
-.productPrice p:first-child {
+.firstPrice {
     font-family: 'Montserrat';
     font-size: 40px;
     font-weight: 600;
@@ -48,7 +48,7 @@
     text-align: left;
     color: #424436;
 }
-.productPrice p:last-child {
+.secondPrice {
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 500;
@@ -79,4 +79,32 @@
     top: 0px;
     right: 0px;
     margin: 10px;
+}
+
+.productCard button {
+    width:284px;
+    height: 58px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: #F26D22;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    opacity: 0;
+}
+
+.productCard button:active {
+    background-color: #424436;
+    outline: none;
+}
+
+.productCard button:hover{
+   opacity: 100;
 }
