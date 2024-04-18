@@ -21,7 +21,8 @@ export default function ProductsByCategorieContainer({productsByCategorieState})
         <div className={s.byCategoriesContainer}>
             <h2>{category && category.title}</h2>
             <div className={s.categoriesCards}>
-                {data && data.map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
+                {data && data.filter(el => el.visible)
+                .map(el => <ProductsByCategorieCard key={el.id} {...el} />)}
             </div>
         </div>
     )

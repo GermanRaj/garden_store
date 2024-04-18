@@ -1,8 +1,10 @@
-import React, { useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import AllProductsContainer from '../../components/AllProductsContainer'
 import { useDispatch, useSelector} from 'react-redux';
 import s from './index.module.css'
-import { sortProductsOnSalesAction } from '../../store/reducers/productsOnSaleReducer';
+import { checkProductAction, priceCheckAction, productSortAction} from '../../store/reducers/productsOnSaleReducer';
+
+
 
 export default function AllProductPage() {
 
@@ -15,8 +17,21 @@ const dispatch = useDispatch();
 
 const allProductsByState = useSelector(store =>store.productsOnSales )
 
-const order = event => {
-    dispatch(sortProductsOnSalesAction(event.target.value))}
+const handle_click = e => dispatch(checkProductAction(e.target.checked));
+   const order = event => {
+      dispatch(productSortAction(event.target.value));
+   }
+   const check = event => {
+      event.preventDefault();
+      const { min_value, max_value } = event.target;
+      const check_products = {
+         min_value: parseFloat(min_value.value) || 0,
+         max_value: parseFloat(max_value.value) || Infinity
+      }
+      dispatch(priceCheckAction(check_products));
+      
+      event.target.reset();
+   }
 
   return (
     <div>
@@ -37,9 +52,10 @@ const order = event => {
         <div className={s.priceTitle}>
           <span>Price </span>
           <div>
-              <form>
-          <input className={s.formFrom}  type="text" placeholder="from" name="from"/>
-          <input className={s.formTo} type="text" placeholder="to" name="to"/>
+              <form onSubmit={check} className={s.form} >
+                <input className={s.formFrom}  type="text" placeholder="from" name="min_value"/>
+                <input className={s.formTo} type="text" placeholder="to" name="max_value"/>
+                <input type='submit'/>
               </form>
           </div>
     </div>
@@ -52,7 +68,7 @@ const order = event => {
               </label>
 
            <span>Sorted </span>
-            <select onInput={order} className={s.byDefault}>
+            <select onInput={order} className={s.byDefault}> 
                 <option value='by_default'>By default</option>
                 <option value='name'>By name (A-Z)</option>
                 <option value='price_asc'>By price (ASC)</option>
