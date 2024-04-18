@@ -21,10 +21,6 @@ useEffect(() => {
 
 const singleProductState = useSelector(store => store.singleProduct)
   
-
-
-    
-    
   return (
     <div>
              <div className={s.productContainer}>

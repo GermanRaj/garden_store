@@ -20,7 +20,8 @@ const tihsproductsOnSale = allProductsOnSalesData.filter(el => el.discont_price 
   return (
     <div className={s.salesContainer}>
         {
-         tihsproductsOnSale.map(el => <AllProductsOnSalesCard key={el.id} {...el} />)
+         tihsproductsOnSale.filter(el => el.visible)
+         .map(el => <AllProductsOnSalesCard key={el.id} {...el} />)
         }
     </div>
   )

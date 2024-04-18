@@ -2,7 +2,7 @@ import React from 'react';
 import s from './index.module.css'
 import AllProductsOnSalesContainer from '../../components/AllProductsOnSalesContainer'
 import {  useDispatch, useSelector } from 'react-redux';
-import { sortProductsOnSalesAction } from '../../store/reducers/productsOnSaleReducer'
+import { priceCheckAction, productSortAction} from '../../store/reducers/productsOnSaleReducer'
 
 
 
@@ -12,11 +12,21 @@ export default function AllSalesPage() {
 
   const productsBySaleState = useSelector(store =>store.productsOnSales )
 
-
   const order = event => {
-  dispatch(sortProductsOnSalesAction(event.target.value))
-}
+    dispatch(productSortAction(event.target.value));
+ }
+ const check = event => {
+    event.preventDefault();
+    const { min_value, max_value } = event.target;
+    const check_products = {
+       min_value: min_value.value || 0,
+       max_value: max_value.value || Infinity
+    }
+    dispatch(priceCheckAction(check_products));
+    event.target.reset();
+ }
 
+ 
   return (
     <div>
       <div>
@@ -35,9 +45,10 @@ export default function AllSalesPage() {
         <div className={s.priceTitle}>
           <span>Price </span>
           <div>
-              <form>
-          <input className={s.formFrom}  type="text" placeholder="from" name="from"/>
-          <input className={s.formTo} type="text" placeholder="to" name="to"/>
+              <form onSubmit={check}>
+          <input className={s.formFrom}  type="text" placeholder="from" name="min_value"/>
+          <input className={s.formTo} type="text" placeholder="to" name="max_value"/>
+          <input type='submit'/>
               </form>
           </div>
     </div>
