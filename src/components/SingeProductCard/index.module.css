@@ -344,3 +344,22 @@ padding-top: 15px;
      text-overflow: ellipsis;
  }
 
+ .errorr {
+   font-size: 17px;
+   font-family: Montserrat;
+   padding-top: 10px;
+   animation: flicker 3s infinite
+ }
+
+ @keyframes flicker {
+    0% {
+       opacity: 1;
+    }
+    50% {
+       opacity: 0.2;
+    }
+    100% {
+       opacity: 1;
+    }
+ }
+

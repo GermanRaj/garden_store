@@ -1,4 +1,3 @@
-
 import React from 'react'
 import CategoryContainer from '../../components/CategoryContainer'
 import s from './index.module.css'
@@ -11,7 +10,9 @@ export default function CategoriesPage() {
     <hr />
         <div className={s.navigation}>
           <div className={s.navigationMainPage}>
-            <p>Main page</p>
+            <Link to={'/'}>
+              <p>Main page</p>
+            </Link>
             <p>__</p>
         </div>
             <div className={s.navigationCategories}>
