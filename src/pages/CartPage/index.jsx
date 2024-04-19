@@ -10,16 +10,16 @@ import Modal from '../../components/Modal';
 
 export default function CartPage() {
 
-  const [modalActive, setModalActive ] = useState(false);
+const [modalActive, setModalActive ] = useState(false);
 
- const openModalWindow = () => setModalActive(true)
- const closeModalWindow = () => setModalActive(false)
+const openModalWindow = () => setModalActive(true)
+const closeModalWindow = () => setModalActive(false)
  
-  const cartState = useSelector(store => store.cart);
+const cartState = useSelector(store => store.cart);
 
-  useEffect(() => {
+useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cartState))
-  }, [cartState]);
+}, [cartState]);
 
 const totalPrice = cartState.reduce((acc, el) => acc + (el.price * el.count), 0)
   
