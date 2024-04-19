@@ -3,6 +3,7 @@ import s from './index.module.css'
 import AllProductsOnSalesContainer from '../../components/AllProductsOnSalesContainer'
 import {  useDispatch, useSelector } from 'react-redux';
 import { priceCheckAction, productSortAction} from '../../store/reducers/productsOnSaleReducer'
+import { Link } from 'react-router-dom';
 
 
 
@@ -33,7 +34,9 @@ export default function AllSalesPage() {
        <hr class='solid' />
       </div>
       <div className={s.navigation}>
-        <p className>Main page</p>
+        <Link to={'/'}>
+        <p className> Main page</p>
+        </Link>
         <p>__</p>
         <p className={s.navigationAllSales}>All sales</p>
       </div>
@@ -48,7 +51,7 @@ export default function AllSalesPage() {
               <form onSubmit={check}>
           <input className={s.formFrom}  type="text" placeholder="from" name="min_value"/>
           <input className={s.formTo} type="text" placeholder="to" name="max_value"/>
-          <input type='submit'/>
+          <input className={s.submitbtn} type='submit'/>
               </form>
           </div>
     </div>

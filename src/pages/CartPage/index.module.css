@@ -131,7 +131,7 @@ cursor: pointer;
     position: relative;
 }
 
-.position > p {
+.position p {
     border: 1px solid #DDDDDD;
     width: 170px;
     height: 36px;
@@ -188,6 +188,7 @@ cursor: pointer;
     line-height: 26px;
     text-wrap: nowrap;
     margin-bottom: 80px;
+    cursor: pointer;
     
 }
 

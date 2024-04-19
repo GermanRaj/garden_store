@@ -59,13 +59,13 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                      <p>Categories</p>
                      <p>__</p> </div>
             </Link>
-            <Link to={`/products/${categoryId}`}>
+            <Link to={`/product/${categoryId}`}>
                 <div className={s.navigationCategoryName}>
                         <div className={s.categoryStyle}>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
                         <p>__</p>
                </div>
             </Link>
-            <Link to={`/product/${id}`}>
+            <Link to={`/products/${id}`}>
                <div className={s.singleProductName}> { title } </div>
             </Link>
          </section>
@@ -85,8 +85,11 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                                     <p onClick={incr_count}>+</p>
                                </div>
                                <button onClick={add_to_cart}> Add to cart </button>
-                     <p style={{ color: 'black' }}>{error_message}</p>
-                            </section>
+                               </section>
+                                 <div className={s.errorr}>
+                                  <p style={{ color: 'black' }}>{error_message}</p>
+                                 </div>
+                            
                                     <section className={s.blockfooter}>
                                         <h3>Description</h3>
                                         <p className={s.description}>{description}</p>

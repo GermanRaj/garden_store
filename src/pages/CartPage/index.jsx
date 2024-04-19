@@ -45,7 +45,9 @@ const userData = {
           <div className={s.line}></div>
           <div className={s.position}>
             <h2 className={s.title}>Shopping cart</h2>
-            <p>Back to the store</p>
+            <Link to={'/'}>
+               <p>Back to the store</p>
+            </Link>
             <div className={s.dash}></div>
           </div>
           <p className={s.text}>Looks like you have no items in your basket currently</p>
