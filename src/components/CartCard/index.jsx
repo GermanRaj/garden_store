@@ -5,9 +5,6 @@ import { decrCountAction, incrCountAction, deleteCartItemAction } from '../../st
 import s from './index.module.css'
 
 
-
-
-
 export default function CartCard({id, image, title, price, discont_price, count}) {
 
     const dispatch = useDispatch()
@@ -24,9 +21,6 @@ export default function CartCard({id, image, title, price, discont_price, count}
                 <h4>${price * count}</h4>
                 <h6 onClick={()=>dispatch(deleteCartItemAction(id))}
                 >X</h6>
-                
-
-            
           </div>
       )
     }
