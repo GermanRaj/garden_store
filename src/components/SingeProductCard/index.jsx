@@ -16,6 +16,7 @@ export default function SingleProductCard({id, categoryId, title, image, discont
     useEffect(() =>{
         dispatch(getCategoriesList)
     }, []);
+    
 
     const categories_data = useSelector(store => store.mainCategories)
 
@@ -23,6 +24,7 @@ export default function SingleProductCard({id, categoryId, title, image, discont
         const category = categories_data.find(el => el.id === categoryId);
         return category ? category.title : 'Loading...';
      }
+
 
      const [error_message, setErrorMessage] = useState('');
      const [count, setCount] = useState(0);
@@ -44,6 +46,14 @@ export default function SingleProductCard({id, categoryId, title, image, discont
         setErrorMessage('');
         setCount(0);
      };
+
+     const availableDiscount = () => {
+      if (discont_price === null) {
+        return price; 
+      } else {
+        return discont_price; 
+      };
+    };
     
   return (
     <div>
@@ -74,9 +84,12 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                 <div className={s.textPosition}>
                     <h3> {title} </h3>
                     <section className={s.PricesAndDiscounts}>
-                        <p> ${discont_price}</p> 
-                        <p> ${price} </p> 
-                        <p>-{Math.floor(100-(discont_price*100/price))} %</p>
+                        <p> ${availableDiscount()}</p> 
+                       {discont_price !== null && <p>${price}</p>}
+                       {discont_price !== null && (
+                    <p>
+                -{Math.floor(100-(availableDiscount() * 100 / price))}%
+                   </p> )}
                     </section>
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
