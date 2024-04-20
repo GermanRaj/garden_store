@@ -4,14 +4,9 @@ import CartCard from '../CartCard'
 import s from './index.module.css'
 
 
-
-
 export default function CartContainer() {
 
   
-
-
-
     const cartState = useSelector(store => store.cart)
 
   return (

@@ -30,9 +30,6 @@ function App() {
         <Route path='/product/:id' element={<SingleProductPage/>}></Route>
         <Route path='/categories/:categoryId' element={<ProductsByCategoriesPage/>}></Route>
         <Route path='/cart' element={<CartPage/>}></Route>
-
-
-
         <Route path='*' element={<NotFoundPage/>}></Route>
       </Routes>
       <Footer/>
