@@ -13,6 +13,15 @@ export default function AllProductsCard({id, image, title, discont_price, price}
     dispatch(addToCartAction({ id, image, title, price })); 
   };
 
+  
+  const calculateDiscount = () => {
+    if (discont_price === null) {
+      return price; 
+    } else {
+      return discont_price; 
+    };
+  };  
+
   const dispatch = useDispatch()
 
   return (
@@ -20,12 +29,19 @@ export default function AllProductsCard({id, image, title, discont_price, price}
       <div className={s.productCard} >
         <img src={`${domen}${image}`} alt={title} />
           <div>
-              <p> {title}</p>
-              <p> ${discont_price}</p> 
-              <p> ${price} </p> 
-              <p>-{Math.floor(100-(discont_price*100/price))} %</p>
-              <button onClick={addItemToCart}>Add to cart</button>
+          <p className={s.productTitle}>{title}</p>
+            <div className={s.productPrice}>
+                <p className={s.firstPrice}>${calculateDiscount()}</p>
+                {discont_price !== null && <p className={s.secondPrice}>${price}</p>}
+            </div>
+            {discont_price !== null && (
+              <p className={s.productSale}>
+                -{Math.floor(100 - (calculateDiscount() * 100 / price))}%
+              </p>
+            )}
+            <button  onClick={addItemToCart}>Add to cart</button>
           </div>
+
       </div>
   </Link>
   )
