@@ -6,7 +6,7 @@ const SORT_PRODUCTS = 'SORT_PRODUCTS';
 const CHECK_PRODUCTS = 'CHECK_PRODUCTS';
 const CHECK_PRICE = 'CHECK_PRICE';
 
-export const productSortAction = value => ({
+export const productSortAction = (value) => ({
     type: SORT_PRODUCTS, payload: value});
 
 export const checkProductAction = value => ({
