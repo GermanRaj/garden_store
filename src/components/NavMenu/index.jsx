@@ -8,7 +8,6 @@ import {IoMenu} from "react-icons/io5"
 
 export default function NavMenu() {
 
-  const dispatch = useDispatch();
 
   const cartState = useSelector(store => store.cart);
 

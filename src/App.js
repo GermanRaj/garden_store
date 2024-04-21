@@ -12,7 +12,7 @@ import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
 import CartPage from './pages/CartPage';
 import IconPage from './pages/IconPage';
 
-
+import NotFoundPage from './pages/NotFoundPage';
 
 
 function App() {

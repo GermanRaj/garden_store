@@ -1,0 +1,17 @@
+.byCategoriesContainer {
+    padding: 0px 40px;
+}
+.categoriesCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.byCategoriesContainer > h2 {
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+    color: #424436;
+}

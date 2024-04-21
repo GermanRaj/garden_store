@@ -5,9 +5,6 @@ import { decrCountAction, incrCountAction, deleteCartItemAction } from '../../st
 import s from './index.module.css'
 
 
-
-
-
 export default function CartCard({id, image, title, price, discont_price, count}) {
 
     const dispatch = useDispatch()
@@ -16,20 +13,16 @@ export default function CartCard({id, image, title, price, discont_price, count}
                 <img src={`${domen}${image}`} alt={title} />
                 <h6>{title}</h6>
                 <p>{discont_price}</p>
-                <button onClick={() => dispatch(decrCountAction(id))}
-                >-</button>
-                 <p>{count}</p>
-                <button onClick={() =>dispatch(incrCountAction(id))}
-                >+</button>
+                <div className={s.buttons} onClick={() => dispatch(decrCountAction(id))}
+                >-</div>
+                 <p className={s.quantity}>{count}</p>
+                <div className={s.buttons} onClick={() =>dispatch(incrCountAction(id))}
+                >+</div>
                 <h4>${price * count}</h4>
                 <h6 onClick={()=>dispatch(deleteCartItemAction(id))}
                 >X</h6>
-                
-
-            
           </div>
       )
     }
-
 
 

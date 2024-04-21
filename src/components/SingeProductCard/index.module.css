@@ -1,8 +1,6 @@
 .productCard img {
 width: 780px;
 height: 572px;
-border-radius: var(--radiusbig);
-border: 1px 0px 0px 0px;
 object-fit: fill;
 border: 1px solid #DDDDDD;
 border-radius: 12px;
@@ -36,6 +34,7 @@ position: relative;
     font-weight: 700;
     line-height: 70.4px;
     text-align: left;
+    color: #424436;
 }
 
 .PricesAndDiscounts p:nth-child(2){
@@ -99,16 +98,16 @@ position: relative;
 }
 
 .cartFunction p:nth-child(2){
-width:96px;
-height:58px;
-border: 1px solid #DDDDDD;
-font-family: Montserrat;
-font-size: 20px;
-font-weight: 600;
-line-height: 26px;
-text-align: center;
-color: #424436;
-padding-top: 15px;
+    width:96px;
+    height:58px;
+    border: 1px solid #DDDDDD;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: #424436;
+    padding-top: 15px;
 }
 
 .cartFunction p:nth-child(3){
@@ -168,7 +167,6 @@ padding-top: 15px;
     text-align: left;
     color: black;
     margin-bottom: 0px;
- 
 }
 
 .description{
@@ -177,7 +175,6 @@ padding-top: 15px;
     font-weight: 400;
     line-height: 20.8px;
     text-align: left;
-
 }
 
 
@@ -198,15 +195,14 @@ padding-top: 15px;
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
- 
  }
  
- .navigationMainPage{
+ .navigationMainPage {
      display: flex;
      flex-direction: row;
  }
  
- .navigationMainPage p:first-child{
+ .navigationMainPage p:first-child {
      width: 130px;
      height: 36px;
      padding: 8px 16px 8px 16px;
@@ -224,7 +220,7 @@ padding-top: 15px;
      border-radius: 10px;
  }
  
- .navigationMainPage p:last-child{
+ .navigationMainPage p:last-child {
      width: 16px;
      height: 0px;
      gap: 0px;
@@ -236,9 +232,9 @@ padding-top: 15px;
  .navigationCategories {
      display: flex;
      flex-direction: row;
- 
  }
- .navigationCategories p:first-child{
+
+ .navigationCategories p:first-child {
      width:120px;
      height:36px;
      padding: 8px 16px 8px 16px;
@@ -256,7 +252,7 @@ padding-top: 15px;
      border-radius: 10px;
  }
  
- .navigationCategories p:last-child{
+ .navigationCategories p:last-child {
      width: 16px;
      height: 0px;
      gap: 0px;
@@ -265,7 +261,7 @@ padding-top: 15px;
      font-size: large;
  }
  
- .navigationCategoryName{
+ .navigationCategoryName {
      width:120px;
      height:36px;
      gap: 10px;
@@ -280,46 +276,44 @@ padding-top: 15px;
      border: 1px solid #DDDDDD;
      color: #8B8B8B;
      border-radius: 10px;
-    }
+}
 
-     .navigationCategoryName{
-         display: flex;
-         flex-direction: row;
-         margin-right: 10px;
+.navigationCategoryName {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
 
-     }
+}
 
-     .navigationCategoryName >p {
-        width: 16px;
-        height: 0px;
-        gap: 0px;
-        opacity: 0px;
-        color: #DDDDDD;
-        font-size: large;
-        margin-left: 9px;
-     }
+.navigationCategoryName >p {
+    width: 16px;
+    height: 0px;
+    gap: 0px;
+    opacity: 0px;
+    color: #DDDDDD;
+    font-size: large;
+    margin-left: 9px;
+}
      
  
  
-    .categoryStyle{
-        width: 220px;
-        height:36px;
-        padding: 8px 16px 8px 16px;
-        gap: 10px;
-        border-radius: var(--radiussmall);
-        opacity: 0px;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 20.16px;
-        text-align: left;
-        color: #8B8B8B;
-        border-radius: 10px;
-        text-align: center;
-        justify-content: center;
-        
-        
- } 
+.categoryStyle {
+    width: 220px;
+    height:36px;
+    padding: 8px 16px 8px 16px;
+    gap: 10px;
+    border-radius: var(--radiussmall);
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: left;
+    color: #8B8B8B;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;     
+} 
  
 
  
@@ -344,5 +338,24 @@ padding-top: 15px;
      white-space: nowrap;
      overflow: hidden;
      text-overflow: ellipsis;
+ }
+
+ .errorr {
+   font-size: 17px;
+   font-family: Montserrat;
+   padding-top: 10px;
+   animation: flicker 3s infinite
+ }
+
+ @keyframes flicker {
+    0% {
+       opacity: 1;
+    }
+    50% {
+       opacity: 0.2;
+    }
+    100% {
+       opacity: 1;
+    }
  }
 
