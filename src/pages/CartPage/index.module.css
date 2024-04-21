@@ -1,5 +1,6 @@
 .order_form {
 position: relative;
+display: flex;
 top: 150px;  
 width: Fixed (548px)px;
 height: Hug (582px)px;
@@ -8,7 +9,6 @@ opacity: 0px;
 border-radius: 12px; 
 margin: 32px;
 background: #F2F6D3;
-display: flex;
 flex-direction: column;
 gap: 10px; 
 max-width: 548px;
@@ -118,7 +118,7 @@ cursor: pointer;
     margin-top: 28px;
 }
 
-.title > h2 {
+.title {
     margin-top: 40px;
     width: 477px;
     height: 70px;
@@ -126,9 +126,9 @@ cursor: pointer;
     font-size: 64px;
     font-weight: 700;
     line-height: 70.4px;
-    text-align: left;
     color: #424436;
     margin: 32px;
+    
 }
 
 .position p {
@@ -142,7 +142,7 @@ cursor: pointer;
     padding-top: 7px;
     position: absolute;
     left: 88%;
-    top: 24%;
+    top: 20.5%;
     margin: 32px;
 
 }
@@ -153,8 +153,8 @@ cursor: pointer;
     height: 0px;
     border: 1px 0px 0px 0px; 
     position: absolute;
-    left: 572px;
-    top: 26%;
+    left: 604px;
+    top: 27%;
 }
 
 .text{

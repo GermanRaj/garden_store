@@ -22,14 +22,9 @@ export default function NavMenu() {
   const basket_styles= {
     backgroundImage: `url('${basket_buy}')`
 
-  
-
-   
-
-  }
+    
     return (
     <header className={s.header}>
-      
     <nav>
       <div className={s.logo_img}> 
         <img src={logo} alt='logo'/>

@@ -12,16 +12,15 @@
 
 .card img {
     display: flex;
-    position: relative;
     height: 180px;
     width: 200px;
     border: 1px solid #DDDDDD;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    margin-right: 40px;
+    margin-right: 30px;
 }
 
-.buttons {
+.buttons > p {
     width: 58px;
     height:58px;
     border: 1px solid #DDDDDD;
@@ -32,9 +31,12 @@
     text-align: center;
     padding-top: 15px;
     cursor: pointer;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns:2fr 2fr;
 }
 
-.quantity {
+.quantity  > p {
     width:96px;
     height:58px;
     border: 1px solid #DDDDDD;
@@ -44,11 +46,11 @@
     line-height: 26px;
     text-align: center;
     color: #424436;
-    padding-top: 15px;  
-}
-
-.card p:last-child {
+    padding-top: 15px; 
     cursor: pointer;
+    flex-direction:column;
+    display: grid;
+    grid-template-columns:1fr 1fr;
 }
 
 .card p {
@@ -64,6 +66,19 @@
     text-align: left;
     color: #424436;
     margin-left: 40px;
+    cursor: pointer;
+    justify-content: flex-start;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    display: inline-flex;
+}
+
+.title {
+    text-align: left;
+    color: #424436;
+    margin-left: 32px;
     cursor: pointer;
     justify-content: flex-start;
     font-family: 'Montserrat';
