@@ -1,5 +1,6 @@
 .order_form {
 position: relative;
+display: flex;
 top: 150px;  
 width: Fixed (548px)px;
 height: Hug (582px)px;
@@ -8,7 +9,6 @@ opacity: 0px;
 border-radius: 12px; 
 margin: 32px;
 background: #F2F6D3;
-display: flex;
 flex-direction: column;
 gap: 10px; 
 max-width: 548px;
