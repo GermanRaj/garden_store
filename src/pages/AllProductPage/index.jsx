@@ -6,12 +6,12 @@ import { checkProductAction, priceCheckAction, productSortAction} from '../../st
 import { Link } from 'react-router-dom';
 
 
-export default function AllProductPage() {
+export default function AllProductPage({discount_price, price}) {
 
 const [ checked, setChecked ] = useState(false);
 
 const handleCheck = () => setChecked(!checked);
-console.log(checked);
+
 
 const dispatch = useDispatch();
 
@@ -36,7 +36,6 @@ const handleClick = e => dispatch(checkProductAction(e.target.checked));
   return (
     <div>
       <div>
-       <hr class='solid' />
       </div>
       <div className={s.navigation}>
         <Link to={'/'}>

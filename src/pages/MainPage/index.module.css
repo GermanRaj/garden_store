@@ -3,12 +3,13 @@
     background-color: #FFFFF1;
     }
 
-.header{
-    width: 1440px;
-    height: 600px;
-    top: 128px;
-    
-}
+    .header{
+       width: 1440px;
+        height: 600px;
+        top: 128px;
+       
+        
+    }
 
 .header > p {
     font-family: 'Montserrat';
@@ -69,12 +70,7 @@
     border: white solid;
 }
     
-    .header{
-        width: 1440px;
-        height: 600px;
-        top: 128px;
-        
-    }
+   
     
     .header > h1 {
         font-family: 'Montserrat';
@@ -88,22 +84,7 @@
         padding-right: 40px;
     }
     
-    .header >button {
-        background-color: #92A134;
-        width:218px;
-        height:58px;
-        gap: 10px;
-        margin-top: 40px;
-        margin-left: 40px;
-        font-family: 'Montserrat';
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 26px;
-        text-align: center;
-        color: #FFFFFF;
-        border-radius: 12px;
-        
-    }
+    
     
     .sale {
         font-family: 'Montserrat';
@@ -148,19 +129,7 @@
     }
 
 
-    .categories_title {
-        font-family: 'Montserrat';
-        width: 361px;
-        height:70px ;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 70.4px;
-        text-align: left;
-        margin-left:40px ;
-        color: #424436; 
-        padding-top: 80px;
-
-    }
+    
    
     .dashOnsales{
         border: 1px solid #DDDDDD;
@@ -203,4 +172,4 @@
         justify-content: space-between; 
     }
 
- 
+
