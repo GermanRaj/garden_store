@@ -25,7 +25,7 @@ export default function MainPage() {
                 <div className={s.position} >
                     <h2 className={s.categories_title}>Categories</h2>
                         <div className={s.dash}></div>
-                        <Link to= {`/categories/all`}>
+                        <Link to= {`/categories`}>
                         <div className={s.navCategories}>All categories</div>
                         </Link>
                     </div>

@@ -35,12 +35,10 @@ export default function NavMenu() {
      <Link to='/categories'>Categories</Link>
      <Link to='/allproducts'>All products</Link>
      <Link to='/allsales'> All sales </Link>
-    
-     <p className={s.count}>{totalCount}</p>
-     
     </div>
     <Link to={'/cart'}><div className={s.basket} style={basket_styles}></div></Link>
     <Link to={'/'}><IoMenu className={s.menu_icon} /></Link>
+    <p className={s.count}>{totalCount}</p>
     </nav>
     </header>
   )
