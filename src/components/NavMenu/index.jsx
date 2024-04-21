@@ -8,7 +8,6 @@ import {IoMenu} from "react-icons/io5"
 
 export default function NavMenu() {
 
-  const dispatch = useDispatch();
 
   const cartState = useSelector(store => store.cart);
 
@@ -23,14 +22,9 @@ export default function NavMenu() {
   const basket_styles= {
     backgroundImage: `url('${basket_buy}')`
 
-  
-
-   
-
   }
     return (
     <header className={s.header}>
-      
     <nav>
       <div className={s.logo_img}> 
         <img src={logo} alt='logo'/>
@@ -48,7 +42,6 @@ export default function NavMenu() {
     <Link to={'/cart'}><div className={s.basket} style={basket_styles}></div></Link>
     <Link to={'/'}><IoMenu className={s.menu_icon} /></Link>
     </nav>
-   
     </header>
   )
 }

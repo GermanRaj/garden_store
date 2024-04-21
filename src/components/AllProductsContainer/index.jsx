@@ -16,10 +16,13 @@ useEffect(() => {
 
 const allProductsData =  useSelector(store => store.productsOnSales)
 
+
+
   return (
     <div className={s.allProductontainer}>
         {
-            allProductsData.map(el => <AllProductsCard key={el.id}{...el}/>)
+            allProductsData.filter(el => el.visible)
+            .map(el => <AllProductsCard key={el.id}{...el}/>)
         }
     </div>
   )

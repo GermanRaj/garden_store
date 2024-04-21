@@ -1,30 +1,46 @@
-import React, { useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import AllProductsContainer from '../../components/AllProductsContainer'
 import { useDispatch, useSelector} from 'react-redux';
 import s from './index.module.css'
-import { sortProductsOnSalesAction } from '../../store/reducers/productsOnSaleReducer';
+import { checkProductAction, priceCheckAction, productSortAction} from '../../store/reducers/productsOnSaleReducer';
+import { Link } from 'react-router-dom';
 
-export default function AllProductPage() {
+
+export default function AllProductPage({discount_price, price}) {
 
 const [ checked, setChecked ] = useState(false);
 
 const handleCheck = () => setChecked(!checked);
-console.log(checked);
+
 
 const dispatch = useDispatch();
 
 const allProductsByState = useSelector(store =>store.productsOnSales )
 
-const order = event => {
-    dispatch(sortProductsOnSalesAction(event.target.value))}
+const handleClick = e => dispatch(checkProductAction(e.target.checked));
+   const order = event => {
+      dispatch(productSortAction(event.target.value));
+   }
+   const check = event => {
+      event.preventDefault();
+      const { min_value, max_value } = event.target;
+      const check_products = {
+         min_value: parseFloat(min_value.value) || 0,
+         max_value: parseFloat(max_value.value) || Infinity
+      }
+      dispatch(priceCheckAction(check_products));
+      
+      event.target.reset();
+   }
 
   return (
     <div>
       <div>
-       <hr class='solid' />
       </div>
       <div className={s.navigation}>
+        <Link to={'/'}>
         <p className>Main page</p>
+        </Link>
         <p>__</p>
         <div></div>
         <p className={s.navigationAllSales}>All products</p>
@@ -32,35 +48,31 @@ const order = event => {
       <div className={s.title}>
         <p>All Products</p>
       </div>
-
       <div className={s.sortContainer}>
-        <div className={s.priceTitle}>
-          <span>Price </span>
+          <span className={s.priceTitle}>Price </span>
           <div>
-              <form>
-          <input className={s.formFrom}  type="text" placeholder="from" name="from"/>
-          <input className={s.formTo} type="text" placeholder="to" name="to"/>
+              <form onSubmit={check} className={s.form} >
+                <input className={s.formFrom}  type="text" placeholder="from" name="min_value"/>
+                <input className={s.formTo} type="text" placeholder="to" name="max_value"/>
+                <input type='submit'/>
               </form>
-          </div>
-    </div>
-
+            </div>
         <div className={s.sortedTitle}>
               <label>
                 <span>Discounted items</span>
                 <input className={s.checkbox} type='checkbox' checked={checked} onChange={handleCheck}
-                onClick={handleCheck} />
+                onClick={handleClick} />
               </label>
-
-           <span>Sorted </span>
-            <select onInput={order} className={s.byDefault}>
-                <option value='by_default'>By default</option>
+              <span className={s.sorted}>Sorted </span>
+              <select onInput={order} className={s.byDefault}> 
+                <option value='by_default'>by default</option>
                 <option value='name'>By name (A-Z)</option>
                 <option value='price_asc'>By price (ASC)</option>
                 <option value='price_desc'>By price (DESC)</option>
               </select>
-        </div>
-        </div>
-      <AllProductsContainer allProductsByState={allProductsByState} />
+          </div>
     </div>
+      <AllProductsContainer allProductsByState={allProductsByState} />
+  </div>
   )
 }
