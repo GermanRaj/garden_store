@@ -58,6 +58,7 @@ const userData = {
       ) : (
         <div>
           <CartContainer />
+          <form>
           <div className={s.order_form}>
             <span>Order details</span>
             <p>items</p>
@@ -70,6 +71,7 @@ const userData = {
                  <button onClick={openModalWindow} type="submit">Order</button> 
                 </div>
             </div>
+            </form>
           </div>
       )}
     </div>
