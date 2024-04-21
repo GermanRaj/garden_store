@@ -88,7 +88,7 @@
     gap: 10px;
     border-radius: 10px;
     background-color: #F26D22;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
@@ -98,11 +98,13 @@
     top: 50%;
     left: 15px;
     opacity: 0;
+    border: none;
 }
 
 .productCard button:active {
     background-color: #424436;
     outline: none;
+
 }
 
 .productCard button:hover{
