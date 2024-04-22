@@ -1,1 +1,1 @@
-export const domen = 'https://telran-project-backend-7j6t.onrender.com';
+export const domen = 'https://telran-project-backend-c3e9.onrender.com';
