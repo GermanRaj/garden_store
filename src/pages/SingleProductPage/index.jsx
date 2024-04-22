@@ -23,6 +23,9 @@ const singleProductState = useSelector(store => store.singleProduct)
   
   return (
     <div>
+      <div>
+        <hr class='solid' />
+      </div>
              <div className={s.productContainer}>
                 {
                 singleProductState.map( el => <SingleProductCard key={el.id} {...el}/>)

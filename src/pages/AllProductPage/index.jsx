@@ -36,6 +36,7 @@ const handleClick = e => dispatch(checkProductAction(e.target.checked));
   return (
     <div>
       <div>
+          <hr class='solid' />
       </div>
       <div className={s.navigation}>
         <Link to={'/'}>
