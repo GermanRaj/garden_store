@@ -3,11 +3,11 @@
     height:422px;
     gap: 20px;
     opacity: 0px;    
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 12px;
     position: relative;
     border: 1px solid #DDDDDD;
     background-color: #FFFFFF;
+
    }
    
 

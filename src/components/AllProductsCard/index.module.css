@@ -98,6 +98,7 @@
     top: 50%;
     left: 15px;
     opacity: 0;
+    border: none;
 }
 
 .productCard button:active {

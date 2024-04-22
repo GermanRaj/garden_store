@@ -56,28 +56,27 @@ export default function SingleProductCard({id, categoryId, title, image, discont
     };
     
   return (
-    <div>
-            <section className={s.navigation}>
-            <Link to='/'>
-               <div className={s.navigationMainPage}> 
+    <div className={s.page}>
+         <section className={s.navigation}>
+            <Link to='/' className={s.link}>
+               <div className={s.linkPage}> 
                     <p>Main page</p>
-                    <p>__</p> 
                </div>
             </Link>
-            <Link to='/categories'>
-               <div className={s.navigationCategories}> 
+            <div className={s.line}></div>
+            <Link to='/categories' className={s.link}>
+               <div className={s.linkPage}> 
                      <p>Categories</p>
-                     <p>__</p> </div>
-            </Link>
-            <Link to={`/product/${categoryId}`}>
-                <div className={s.navigationCategoryName}>
-                        <div className={s.categoryStyle}>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
-                        <p>__</p>
                </div>
             </Link>
-            <Link to={`/products/${id}`}>
-               <div className={s.singleProductName}> { title } </div>
+            <div className={s.line}></div>
+            <Link to={`/categories/${categoryId}`} className={s.link}>
+                <div className={s.linkPage}>
+                        <div>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
+               </div>
             </Link>
+            <div className={s.line}></div>
+            <div className={s.singleProductLink}> { title } </div>
          </section>
     <div className={s.productCard}>
             <img src={img} alt={title} />
@@ -93,9 +92,9 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                     </section>
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
-                                    <p onClick={decr_count}>-</p>
-                                    <p>{count}</p>
-                                    <p onClick={incr_count}>+</p>
+                                    <span className={s.square} onClick={decr_count}>-</span>
+                                    <span>{count}</span>
+                                    <span className={s.square} onClick={incr_count}>+</span>
                                </div>
                                <button onClick={add_to_cart}> Add to cart </button>
                                </section>
