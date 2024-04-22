@@ -1,4 +1,3 @@
-
 .navigation{
     width: Hug (231px)px;
     height: Hug (36px)px;
@@ -101,16 +100,16 @@
 }
 
 .formFrom{
-width: 90px;
-height: 30px;
-margin-right: 16px;
-font-family: Montserrat;
-font-size: 16px;
-font-weight: 500;
-line-height: 20.16px;
-text-align: left;
-border-radius: 6px;
-padding-left: 16px;
+    width: 90px;
+    height: 30px;
+    margin-right: 16px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: left;
+    border-radius: 6px;
+    padding-left: 16px;
 }
 
 .formTo{

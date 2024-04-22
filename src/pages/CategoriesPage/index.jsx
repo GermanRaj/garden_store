@@ -20,7 +20,9 @@ export default function CategoriesPage() {
            </div>
         </div>
          <h2 className={s.categoriesTitle}>Categories</h2>
-  <CategoryContainer />
+         <div className={s.container}>
+            <CategoryContainer />
+         </div>
 </div>
 );
 }

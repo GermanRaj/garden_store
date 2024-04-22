@@ -22,8 +22,7 @@ export default function ProductsByCategoriesPage() {
                <div>
                   <hr class='solid' />
                </div>
-
-            <div>
+             <div>
                 <ProductsByCategorieContainer productsByCategorieState={productsByCategorieState}/>
             </div>
         </div>

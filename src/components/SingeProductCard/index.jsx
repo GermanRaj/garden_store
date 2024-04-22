@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { domen } from '../../domen'
 import s from './index.module.css'
 import {useDispatch, useSelector} from 'react-redux'
-import { add_single_to_cart_action } from '../../store/reducers/cartReducer'
+import { addSingleProductAction} from '../../store/reducers/cartReducer'
 import { getCategoriesList } from '../../Requests/categories'
 import { Link } from 'react-router-dom'
 
@@ -13,12 +13,11 @@ export default function SingleProductCard({id, categoryId, title, image, discont
 
     const dispatch = useDispatch();
 
-    useEffect(() =>{
-        dispatch(getCategoriesList)
-    }, []);
-    
-
     const categories_data = useSelector(store => store.mainCategories)
+
+    useEffect(() =>{
+      dispatch(getCategoriesList)
+  }, []);
 
     const get_category_title = categoryId => {
         const category = categories_data.find(el => el.id === categoryId);
@@ -26,7 +25,7 @@ export default function SingleProductCard({id, categoryId, title, image, discont
      }
 
 
-     const [error_message, setErrorMessage] = useState('');
+     const [error, setErrorMessage] = useState('');
      const [count, setCount] = useState(0);
      
      const incr_count = () => {
@@ -42,9 +41,8 @@ export default function SingleProductCard({id, categoryId, title, image, discont
            setErrorMessage("Unable to order 0 quantity");
            return;
         }
-        dispatch(add_single_to_cart_action({id, image, title, price, discont_price, count}))
-        setErrorMessage('');
-        setCount(0);
+        dispatch(addSingleProductAction({id, image, title, price, discont_price, count}))
+        setErrorMessage(''); setCount(0);
      };
 
      const availableDiscount = () => {
@@ -56,28 +54,27 @@ export default function SingleProductCard({id, categoryId, title, image, discont
     };
     
   return (
-    <div>
-            <section className={s.navigation}>
-            <Link to='/'>
-               <div className={s.navigationMainPage}> 
+    <div className={s.page}>
+         <section className={s.navigation}>
+            <Link to='/' className={s.link}>
+               <div className={s.linkPage}> 
                     <p>Main page</p>
-                    <p>__</p> 
                </div>
             </Link>
-            <Link to='/categories'>
-               <div className={s.navigationCategories}> 
+            <div className={s.line}></div>
+            <Link to='/categories' className={s.link}>
+               <div className={s.linkPage}> 
                      <p>Categories</p>
-                     <p>__</p> </div>
-            </Link>
-            <Link to={`/product/${categoryId}`}>
-                <div className={s.navigationCategoryName}>
-                        <div className={s.categoryStyle}>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
-                        <p>__</p>
                </div>
             </Link>
-            <Link to={`/products/${id}`}>
-               <div className={s.singleProductName}> { title } </div>
+            <div className={s.line}></div>
+            <Link to={`/categories/${categoryId}`} className={s.link}>
+                <div className={s.linkPage}>
+                        <div>{categories_data.length > 0 ? get_category_title(categoryId) : 'Loading...'}</div>
+               </div>
             </Link>
+            <div className={s.line}></div>
+            <div className={s.singleProductLink}> { title } </div>
          </section>
     <div className={s.productCard}>
             <img src={img} alt={title} />
@@ -93,14 +90,14 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                     </section>
                             <section className={s.cartFunction}>
                                 <div className={s.addOrDeleteForm}>
-                                    <p onClick={decr_count}>-</p>
-                                    <p>{count}</p>
-                                    <p onClick={incr_count}>+</p>
+                                    <span className={s.square} onClick={decr_count}>-</span>
+                                    <span>{count}</span>
+                                    <span className={s.square} onClick={incr_count}>+</span>
                                </div>
                                <button onClick={add_to_cart}> Add to cart </button>
                                </section>
                                  <div className={s.errorr}>
-                                  <p style={{ color: 'black' }}>{error_message}</p>
+                                  <p style={{ color: 'black' }}>{error}</p>
                                  </div>
                             
                                     <section className={s.blockfooter}>

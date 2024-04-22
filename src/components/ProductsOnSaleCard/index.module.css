@@ -3,12 +3,11 @@
     height:422px;
     gap: 20px;
     opacity: 0px;    
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 12px;
     position: relative;
     border: 1px solid #DDDDDD;
     background-color: #FFFFFF;
-   }
+}
    
 
 .products_on_sales > img {
@@ -19,9 +18,9 @@
     opacity: 0px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; 
-   }
+}
    
-   .products_on_sales >div>p:nth-child(1){
+.products_on_sales >div>p:nth-child(1){
     margin-left: 32px;
     margin-top: 10px;
     font-family: 'Montserrat';
@@ -33,10 +32,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-   
    }
    
-   .products_on_sales >div>p:nth-child(2){
+.products_on_sales >div>p:nth-child(2){
        width: 103px;
        height: 44px;
        font-family: 'Montserrat';
@@ -50,7 +48,7 @@
        position: relative;
    }
    
-   .products_on_sales >div>p:nth-child(3){
+.products_on_sales >div>p:nth-child(3){
        width: 60px;
        height: 26px;
        font-family: 'Montserrat';
@@ -61,11 +59,10 @@
        text-decoration: line-through;
        position: absolute;
        top: 355px;
-       margin-left: 180px;
-       
-   }
+       margin-left: 180px; 
+}
    
-   .products_on_sales >div>p:nth-child(4){
+.products_on_sales >div>p:nth-child(4){
        width: 60px;
        height: 26px;
        border: 1px solid rgba(242, 109, 34, 1);
@@ -80,7 +77,7 @@
        position: absolute;
        bottom: 380px;
        left: 245px;
-   }
+}
 
 
 
