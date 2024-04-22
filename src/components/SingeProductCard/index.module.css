@@ -1,13 +1,14 @@
 .page {
     margin: 0px 40px;
 }
+
 .productCard img {
-width: 780px;
-height: 572px;
-object-fit: fill;
-border: 1px solid #DDDDDD;
-border-radius: 12px;
-position: relative;
+    width: 780px;
+    height: 572px;
+    object-fit: fill;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    position: relative;
 }
 
 .productCard{
@@ -69,8 +70,6 @@ position: relative;
     line-height: 26px;
     letter-spacing: 0.03em;
     text-align: left;
-    
-
 }
 
 .cartFunction {
@@ -213,15 +212,18 @@ position: relative;
     display: flex;
     margin: 40px 0px;
 }
+
 .link {
     text-decoration: none;
 }
+
 .line {
     margin-top: auto;
     margin-bottom: auto;
     width: 16px;
     border: 1px solid #DDDDDD;
 }
+
 .linkPage {
     padding: 8px 16px;
     border-radius: 6px;
@@ -232,6 +234,7 @@ position: relative;
     text-align: center;
     color: #8B8B8B;
 }
+
 .singleProductLink {
     padding: 8px 16px;
     border-radius: 6px;
@@ -260,9 +263,6 @@ position: relative;
     text-align: center;
     justify-content: center;     
 } 
- 
-
- 
  
  .singleProductName {
      width:112px;

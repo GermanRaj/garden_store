@@ -6,10 +6,9 @@
     border: 1px solid #DDDDDD;
     border-radius: 12px;
     position: relative;
-    cursor: pointer;
-    
-    
+    cursor: pointer;  
 }
+
 .productCard > img {
     width: 315px;
     height: 284px;
@@ -61,7 +60,6 @@
     position: absolute;
     bottom: 30px;
     padding-left: 190px;
-    
 }
 
 .productCard P:nth-child(4) {
@@ -80,7 +78,6 @@
        position: absolute;
        bottom: 380px;
        left: 240px;
-
 }
 
 .productCard button {
@@ -101,7 +98,6 @@
     left: 15px;
     opacity: 0;
     border: none;
-    
 }
 
 .productCard button:active {
