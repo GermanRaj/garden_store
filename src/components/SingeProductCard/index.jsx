@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { domen } from '../../domen'
 import s from './index.module.css'
 import {useDispatch, useSelector} from 'react-redux'
-import { add_single_to_cart_action } from '../../store/reducers/cartReducer'
+import { addSingleProductAction} from '../../store/reducers/cartReducer'
 import { getCategoriesList } from '../../Requests/categories'
 import { Link } from 'react-router-dom'
 
@@ -13,12 +13,11 @@ export default function SingleProductCard({id, categoryId, title, image, discont
 
     const dispatch = useDispatch();
 
-    useEffect(() =>{
-        dispatch(getCategoriesList)
-    }, []);
-    
-
     const categories_data = useSelector(store => store.mainCategories)
+
+    useEffect(() =>{
+      dispatch(getCategoriesList)
+  }, []);
 
     const get_category_title = categoryId => {
         const category = categories_data.find(el => el.id === categoryId);
@@ -26,7 +25,7 @@ export default function SingleProductCard({id, categoryId, title, image, discont
      }
 
 
-     const [error_message, setErrorMessage] = useState('');
+     const [error, setErrorMessage] = useState('');
      const [count, setCount] = useState(0);
      
      const incr_count = () => {
@@ -42,9 +41,8 @@ export default function SingleProductCard({id, categoryId, title, image, discont
            setErrorMessage("Unable to order 0 quantity");
            return;
         }
-        dispatch(add_single_to_cart_action({id, image, title, price, discont_price, count}))
-        setErrorMessage('');
-        setCount(0);
+        dispatch(addSingleProductAction({id, image, title, price, discont_price, count}))
+        setErrorMessage(''); setCount(0);
      };
 
      const availableDiscount = () => {
@@ -99,7 +97,7 @@ export default function SingleProductCard({id, categoryId, title, image, discont
                                <button onClick={add_to_cart}> Add to cart </button>
                                </section>
                                  <div className={s.errorr}>
-                                  <p style={{ color: 'black' }}>{error_message}</p>
+                                  <p style={{ color: 'black' }}>{error}</p>
                                  </div>
                             
                                     <section className={s.blockfooter}>

@@ -10,7 +10,6 @@
    margin-left: 40px;
    display: flex;
    flex-direction: row;
-
 }
 
 .navigationMainPage{
@@ -48,8 +47,8 @@
 .navigationCategories {
     display: flex;
     flex-direction: row;
-
 }
+
 .navigationCategories p:first-child{
     width:120px;
     height:36px;

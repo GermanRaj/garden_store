@@ -12,8 +12,6 @@
     gap: 32px;
 }
 
-
-
 .byCategoriesContainer > h2 {
     font-family: 'Montserrat';
     font-size: 64px;
@@ -25,19 +23,16 @@
     padding: 0px;
 }
 
-
-
 .sortContainer {
     display: flex;  
     gap: 40px; 
     margin-bottom: 40px; 
 }
 
-
-
 .navigation{
     display: flex;
 }
+
 .linkPage {
     padding: 8px 16px;
     border-radius: 6px;
@@ -48,12 +43,14 @@
     text-align: center;
     color: #8B8B8B;
 }
+
 .line {
     margin-top: auto;
     margin-bottom: auto;
     width: 16px;
     border: 1px solid #DDDDDD;
 }
+
 .categoriesProductsName {
     padding: 8px 16px;
     border-radius: 6px;
@@ -65,18 +62,18 @@
     color: #424436;
 }
 
-
-
 .priceContainer {
     display: flex;
     align-items: center;
 }
+
 .priceTitle {
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 600;
     color: #424436;
 }
+
 .formInput {
     width: 112px;
     height: 36px;
@@ -89,17 +86,17 @@
     color: #8B8B8B;
     margin-left: 16px;
 }
+
 .form > input:nth-child(3) {
     display: none;
 }
-
-
 
 .checkboxContainer {
     display: flex;
     gap: 16px;
     align-items: center;
 }
+
 .checkboxContainer > input[type="checkbox"] {
     width: 36px;
     height: 36px;
@@ -107,6 +104,7 @@
     border: 1px solid #DDDDDD;
     background: #FFFFFF;
 }
+
 .checkboxContainer > span {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -115,13 +113,12 @@
     color: #424436;
 }
 
-
-
 .sortedConteiner {
     display: flex;
     gap: 16px;
     align-items: center;
 }
+
 .sorted {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -129,6 +126,7 @@
     text-align: left;
     color: #424436;
 }
+
 .byDefault {
     width: 200px;
     height: 36px;

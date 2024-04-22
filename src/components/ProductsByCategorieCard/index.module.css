@@ -8,6 +8,7 @@
     border: 1px solid #DDDDDD;
     position: relative;
 }
+
 .productCard > img {
     width: 315px;
     height: 284px;
@@ -17,12 +18,14 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
 .productCard > div {
     display: flex;
     flex-direction:column; 
     padding: 16px 32px 16px 32px;
     gap: 16px;
 }
+
 .productTitle {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -40,6 +43,7 @@
     flex-direction:row;
     gap: 16px;
 }
+
 .firstPrice {
     font-family: 'Montserrat';
     font-size: 40px;
@@ -48,6 +52,7 @@
     text-align: left;
     color: #424436;
 }
+
 .secondPrice {
     font-family: 'Montserrat';
     font-size: 20px;
@@ -58,6 +63,7 @@
     align-self: flex-end;
     text-decoration: line-through;
 }
+
 .productSale {
     width: 75px;
     height: 35px;
@@ -105,7 +111,6 @@
 .productCard button:active {
     background-color: #424436;
     outline: none;
-
 }
 
 .productCard button:hover{
