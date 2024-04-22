@@ -37,12 +37,11 @@ const userData = {
     event.target.reset()
   }
 
+const totalCount = cartState.reduce((acc, el ) => acc + el.count , 0)
+
   return (
     <div>
-      <Modal closeModalWindow={closeModalWindow} modalActive={modalActive}/>
-      {cartState.length === 0 ? (
-        <section>
-          <div className={s.line}></div>
+      <div className={s.line}></div>
           <div className={s.position}>
             <h2 className={s.title}>Shopping cart</h2>
             <Link to={'/'}>
@@ -50,19 +49,24 @@ const userData = {
             </Link>
             <div className={s.dash}></div>
           </div>
+      <Modal closeModalWindow={closeModalWindow} modalActive={modalActive}/>
+      {cartState.length === 0 ? (
+        <section>
           <p className={s.text}>Looks like you have no items in your basket currently</p>
           <Link to={'/'}>
             <button className={s.btn}>Continue Shopping</button>
           </Link>
         </section>
       ) : (
-        <div>
-          <CartContainer />
+        <div className={s.block}>
+          <CartContainer/>
           <form>
           <div className={s.order_form}>
             <span>Order details</span>
-            <p>items</p>
-            <p>Total</p>
+              <div className={s.totalText}>
+                <p> {totalCount} items</p>
+                <p>Total</p>
+             </div>
             <div className={s.total_price}>${totalPrice}</div>
                 <div className={s.inputs} onSubmit={orderSubmit}>
                   <input type="text" placeholder="Name" name="name" />
