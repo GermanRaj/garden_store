@@ -37,7 +37,7 @@ const userData = {
     event.target.reset()
   }
 
-const totalCount = cartState.reduce((acc, el ) => acc + el.count , 0)
+  const ItemsCount = new Set(cartState.map(item => item.id)).size;
 
   return (
     <div>
@@ -64,7 +64,7 @@ const totalCount = cartState.reduce((acc, el ) => acc + el.count , 0)
           <div className={s.order_form}>
             <span>Order details</span>
               <div className={s.totalText}>
-                <p> {totalCount} items</p>
+                <p> {ItemsCount} items</p>
                 <p>Total</p>
              </div>
             <div className={s.total_price}>${totalPrice}</div>
