@@ -111,7 +111,6 @@
     border-radius: 6px;
     padding-left: 16px;
 }
-
 .formTo{
     width: 90px;
     height: 30px;
@@ -123,7 +122,6 @@
     border-radius: 6px;
     padding-left: 16px;
 }
-
 .sortedTitle{
     width: Hug (285px)px;
     height: Hug (36px)px;
@@ -131,7 +129,6 @@
     opacity: 0px;
     display: flex;
 }
-
 .sortedTitle > span {
     font-family: Montserrat;
     font-size: 20px;
@@ -140,7 +137,6 @@
     text-align: left;
     color: #424436;
 }
-
 .byDefault{
     width: 200px;
     height: 30px;

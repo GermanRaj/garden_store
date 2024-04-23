@@ -26,34 +26,3 @@ a {
   text-decoration: none;
 }
 
-@media(max-width: 1440px){
-.wrapper{
-  width: 1000px;
-
-}
-}
-
-@media(max-width: 1440px){
-  .wrapper{
-    width: 768px;
-  
-  }
-  }
-  @media(max-width: 1440px){
-    .wrapper{
-      width: 480px;
-    
-    }
-    }
-
-    @media(max-width: 1440px){
-      .wrapper{
-        width: 360px;
-      
-      }
-      }
-
-.wrapper{
-  width: 1440px;
-  height: auto;
-}
