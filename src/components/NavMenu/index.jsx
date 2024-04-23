@@ -22,28 +22,23 @@ export default function NavMenu() {
   const basket_styles= {
     backgroundImage: `url('${basket_buy}')`
 
-    
+  }
     return (
     <header className={s.header}>
     <nav>
       <div className={s.logo_img}> 
         <img src={logo} alt='logo'/>
         </div>
-     
-    <div className={s.nav_menu}>
-     <Link to='/'>Main Page</Link>
-     <Link to='/categories'>Categories</Link>
-     <Link to='/allproducts'>All products</Link>
-     <Link to='/allsales'> All sales </Link>
     
-     <p className={s.count}>{totalCount}</p>
-     
-    </div>
+    <div className={s.nav_menu}>
+    <Link to='/'>Main Page</Link>
+    <Link to='/categories'>Categories</Link>
+    <Link to='/allproducts'>All products</Link>
+    <Link to='/allsales'> All sales </Link></div>
     <Link to={'/cart'}><div className={s.basket} style={basket_styles}></div></Link>
     <Link to={'/'}><IoMenu className={s.menu_icon} /></Link>
+    <p className={s.count}>{totalCount}</p>
     </nav>
-   
     </header>
   )
 }
-   

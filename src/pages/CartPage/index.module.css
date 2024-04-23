@@ -1,114 +1,92 @@
 .order_form {
-position: relative;
-display: flex;
-top: 150px;  
-width: Fixed (548px)px;
-height: Hug (582px)px;
-padding: 32px 0px 0px 0px;
-opacity: 0px;
-border-radius: 12px; 
-margin: 32px;
-background: #F2F6D3;
-flex-direction: column;
-gap: 10px; 
-max-width: 548px;
-max-height: 582px;
-margin-right: 32px;
-margin-left: 850px;
+    display: flex;
+    width:548px;
+    height:582px;
+    padding: 32px 0px 0px 0px;
+    border-radius: 12px; 
+    margin-top: 20px;
+    background: #F2F6D3;
+    flex-direction: column;
+    margin-left: 15px;
 }
 
 .order_form > span {
-width: 430px;
-height: 44px;
-gap: 24px;
-opacity: 0px;
-font-family: 'Montserrat';
-font-size: 40px;
-font-weight: 700;
-line-height: 44px;
-text-align: left;
-color: #424436;
-}
-
-.order_form > p {
-font-family: 'Montserrat';
-font-size: 40px;
-font-weight: 500;
-line-height: 52px;
-text-align: left;
-color: #8B8B8B;
-width: 148px;
-height: 52px;
-gap: 24px;
-opacity: 0px;
+    width: 430px;
+    height: 44px;
+    gap: 24px;
+    opacity: 0px;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+    color: #424436;
+    padding-left: 32px;
 }
 
 .total_price {  
-width: 250px;
-height: 70px;
-opacity: 0px;
-font-family: 'Montserrat';
-font-size: 64px;
-font-weight: 700;
-line-height: 70.4px;
-text-align: left;
-color: #424436;
-margin-right: 40px;
-margin-left: 250px;
-gap: 24px;
+    width: 250px;
+    height: 70px;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: left;
+    color: #424436;
+    position: absolute;
+    bottom: 31%;
+    right: 6%;
 }
 
 .inputs {  
-align-items: center;
-justify-content: space-between;
-width: 484px;
-height: 58px;
-padding: 16px 32px 16px 32px;
-border: 1px solid #DDDDDD;
-opacity: 0px;
-display: flex;
-flex-direction: column;
-gap: 16px;
-border-radius: 6px;
-margin: 32px;
-margin-bottom: 420px;
+    align-items: center;
+    justify-content: space-between;
+    width: 484px;
+    height: 58px;
+    padding: 16px 32px 16px 32px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 6px;
+    margin: 32px;
+    margin-bottom: 420px;
 }
 
 .inputs > input {
-width: 484px;
-height: 58px;
-padding: 16px 32px 16px 32px;
-gap: 10px;
-opacity: 0px;
-border-radius: 6px;
-justify-content: space-between;
-opacity: 0px;
-font-family: 'Montserrat';
-border: 1px solid #DDDDDD;
-font-size: 20px;
-font-weight: 500;
-line-height: 26px;
-text-align: left;
+    width: 484px;
+    height: 58px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    opacity: 0px;
+    border-radius: 6px;
+    justify-content: space-between;
+    opacity: 0px;
+    font-family: 'Montserrat';
+    border: 1px solid #DDDDDD;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
 }
 
 .inputs > button {
-background: #92A134;
-width: 484px;
-height: 58px;
-padding: 16px 32px 16px 32px;
-gap: 10px;
-opacity: 0px;
-border-radius: 6px;
-border: 1px solid #DDDDDD;
-font-family: 'Montserrat';
-font-size: 20px;
-font-weight: 600;
-line-height: 26px;
-text-align: center;
-color: #FFFFFF;
-cursor: pointer;
+    background: #92A134;
+    width: 484px;
+    height: 58px;
+    padding: 16px 32px 16px 32px;
+    gap: 10px;
+    opacity: 0px;
+    border-radius: 6px;
+    border: 1px solid #DDDDDD;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
 }
-
 
 .line {
     border: 1px solid #DDDDDD;
@@ -128,7 +106,6 @@ cursor: pointer;
     line-height: 70.4px;
     color: #424436;
     margin: 32px;
-    
 }
 
 .position p {
@@ -188,7 +165,42 @@ cursor: pointer;
     text-wrap: nowrap;
     margin-bottom: 80px;
     cursor: pointer;
-    
+}
+
+.block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.totalText {
+   padding-left: 32px;
+   padding-top:24px;
+}
+
+.totalText p:nth-child(1){
+    width: 148px;
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: left;
+    text-wrap: nowrap;
+    color: #8B8B8B;
+    position: relative; 
+}
+
+.totalText p:nth-child(2){
+    width: 99px;
+    height: 52px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 52px;
+    text-align: left;
+    text-wrap: nowrap;
+    color: #8B8B8B;
 }
 
 

@@ -11,7 +11,9 @@ import CategoriesContainerMain from '../../components/CategoriesContainerMain'
 export default function MainPage() {
 
   const background_styles = {
-    backgroundImage: `url('${backGroundImageHeader}')`
+    backgroundImage: `url('${backGroundImageHeader}')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   }
 
   return (
@@ -21,26 +23,34 @@ export default function MainPage() {
       <button>Check out</button>
     </header>
         <header>
-              <section>
+              <section className={s.object}>
                 <div className={s.position} >
-                    <h2 className={s.categories_title}>Categories</h2>
+                    <h2 className={s.title}>Categories</h2>
+                    <div className={s.dashContainer}>
                         <div className={s.dash}></div>
-                        <Link to= {`/categories/all`}>
+                        <Link to= {`/categories`}>
                         <div className={s.navCategories}>All categories</div>
                         </Link>
                     </div>
+                  </div>
+                    <div className={s.categoriesContainer}>
                       <CategoriesContainerMain/>
+                    </div>
               </section>
                   <DiscountForm />
-                      <section>
-                          <div className={s.postition1}>
-                              <h2 className={s.sale}>Sale </h2>
-                                <div className={s.dashOnsales}></div>
+                      <section className={s.object}>
+                      <div className={s.position} >
+                              <h2 className={s.title}>Sale</h2>
+                              <div className={s.dashContainer}>
+                                <div className={s.dash}></div>
                                 <Link to={`/allsales`}>
                                 <div className={s.navOnSales}>All sales</div>
                                 </Link>
+                              </div>
                           </div>
-                          <ProductsOnSaleContainer/>
+                          <div className={s.productsOnSaleContainer}>
+                            <ProductsOnSaleContainer/>
+                          </div>
                       </section>
         </header>     
   </div>

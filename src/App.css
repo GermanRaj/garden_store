@@ -26,39 +26,3 @@ a {
   text-decoration: none;
 }
 
-@media(max-width: 1440px){
-.wrapper{
-  width: 1000px;
-
-}
-}
-
-@media(max-width: 1440px){
-  .wrapper{
-    width: 768px;
-  
-  }
-  }
-  @media(max-width: 1440px){
-    .wrapper{
-      width: 480px;
-    
-    }
-    }
-
-    @media(max-width: 1440px){
-      .wrapper{
-        width: 360px;
-      
-      }
-      }
-
-.wrapper{
-  width: 1440px;
-  height: auto;
-}
-@media(max-width: 1000px){ 
-.NavMenu_nav_menu__hk3ac {
-  margin: 20px 400px 20px;
-}
-}
