@@ -1,4 +1,3 @@
-import s from './index.module.css'
 import { useParams } from 'react-router-dom';
 import React, { useEffect } from 'react';
 import {  useDispatch, useSelector } from 'react-redux';
