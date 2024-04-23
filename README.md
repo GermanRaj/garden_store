@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Title: "Garden Products Online Store"
 
-## Available Scripts
+Project Description: Development of a web application for an online store specializing in household and garden products. The site provides users with a convenient interface for browsing products, categorizing them, adding them to the cart, and placing orders.
 
-In the project directory, you can run:
+Technologies/libraries used:
 
-### `npm start`
+- React
+- Redux / Redux Toolkit
+- CSS, HTML, according to a Figma project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Detailed Project Description:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Homepage:
+1. Display a list of 4 categories.
+2. Form to get a 5% discount with client-side data validation. Validation is implemented using the React Hook Form library.
+3. Display 4 random discounted products.
 
-### `npm test`
+Product Categories:
+1. View a list of all available product categories.
+2. Ability to navigate to the "Category Products" section for the selected category by clicking on the category card.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Category Products:
+1. Display a list of products in the selected category.
+2. Ability to sort products (default, by descending price, by ascending price, alphabetically).
+3. Ability to filter products (by discount availability and price range).
+4. Ability to view detailed information about a specific product by clicking on the product card.
 
-### `npm run build`
+All Products:
+1. Display the full list of products.
+2. Ability to sort products (default, by descending price, by ascending price, alphabetically).
+3. Ability to filter products (by discount availability and price range).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Discounted Products:
+1. Display a list of discounted products.
+2. Ability to sort products (default, by descending price, by ascending price, alphabetically).
+3. Ability to filter products by price range.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Product Details:
+1. Comprehensive information about the selected product according to the layout (name, price, description, images).
+2. Ability to add the product to the cart.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Shopping Cart:
+1. Display a list of selected products with their quantity and total cost.
+2. Ability to change the quantity of products, remove products from the cart.
+3. Calculation and display of the total cost of products in the cart.
+4. Ability to submit order data when submitting the form.
+5. Creating a modal window confirming successful order placement.
+6. Displaying a message in the cart that it is empty, with the option to return to the main page.
 
-### `npm run eject`
+Page Not Found:
+1. Display a page with a message that the requested page was not found.
+2. Ability to return to the homepage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Additional Features:
+1. Mobile adaptation: the application correctly displays on various devices according to the layout.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact: 1.German Rajevskis e-mail: grajevskis@gmail.com, 2.Aleksandra Bulai e-mail: alexandra.bulai2012@gmail.com, 3. Tamara Haak e-mail: tamarahaak@web.de
+Link to the project: https://github.com/GermanRaj/garden_store

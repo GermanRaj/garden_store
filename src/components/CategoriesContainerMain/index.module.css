@@ -9,8 +9,6 @@
     padding-top: 40px;
 }
 
-
-   
    @media(max-width: 1440px){
     .categories_container{
         width: 1440px;
@@ -60,3 +58,4 @@
 
    
 } 
+

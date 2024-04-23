@@ -105,8 +105,9 @@
     font-size: 14px;
     color: white;
     padding: 16px 32px 16px 32px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat';  
 }
+
    @media(max-width: 1440px){
     .content_container{
         width: 1440px;
@@ -173,17 +174,13 @@
 .inputs{
     width: 300px;
     height: 200px;
-    
-}
-
+   }
 }
 
    @media(max-width: 360px){
     .content_container{
         width: 360px;
     }
-
-   
 
     .block_form >h1{
         font-size: 30px;

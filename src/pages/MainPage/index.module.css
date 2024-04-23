@@ -157,7 +157,7 @@
 }
 
    
-   @media(max-width: 1440px){
+@media(max-width: 1440px){
     .header{
         width: 1440px;
     }
@@ -167,20 +167,21 @@
 @media(max-width: 1000px){
     .header{
         width: 1000px;
-    
-    }
+}
 
-    .header > h1{
+  .header > h1{
         font-size: 70px;
+      
     }
     .categories_card{
         width: auto;
         height: 292px;
         gap: 16px;
     }
-    .dash{
+  
+ .dash{
         width: auto;
-    }
+}
 
 }
 
@@ -245,5 +246,27 @@
        .title {
         font-size: 30px;
        }
+
+.navOnSales{
+    border: 1px solid #DDDDDD;
+    width: 146px;
+    height: 36px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: #8B8B8B;
+    } 
+
+.position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.object {
+    margin: 80px 40px 0px;
+}
