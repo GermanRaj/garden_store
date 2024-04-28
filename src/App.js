@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 import SingleProductPage from './pages/SingleProductPage';
 import ProductsByCategoriesPage from './pages/ProductsByCategoriesPage';
 import CartPage from './pages/CartPage';
-import IconPage from './pages/IconPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 
@@ -32,7 +31,6 @@ function App() {
         <Route path='/product/:id' element={<SingleProductPage/>}></Route>
         <Route path='/categories/:categoryId' element={<ProductsByCategoriesPage/>}></Route>
         <Route path='/cart' element={<CartPage/>}></Route>
-        <Route path='/icon' element={<IconPage/>}></Route>
         <Route path='*' element={<NotFoundPage/>}></Route>
       </Routes>
       <Footer/>
