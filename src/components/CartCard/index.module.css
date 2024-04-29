@@ -81,7 +81,7 @@
     cursor: pointer;
 }
 
-.buttons p:last-child {
+.buttons p:nth-child(4) {
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 600;
@@ -90,6 +90,23 @@
     color: #424436;
     padding-left: 32px;
 }
+
+.buttons p:nth-child(5) {
+    font-family: Montserrat;
+    width: 51px;
+    height: 26px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    text-decoration: line-through;
+    color: #8B8B8B;
+    padding-left: 16px ;
+    margin-top: 14px;
+}
+
+
 
 .button {
   color: #424436;
