@@ -58,8 +58,8 @@ const handleClick = e => dispatch(checkProductAction(e.target.checked));
                 <input type='submit'/>
               </form>
             </div>
-        <div className={s.sortedTitle}>
-              <label>
+        <div >
+              <label className={s.sortedTitle}>
                 <span>Discounted items</span>
                 <input className={s.checkbox} type='checkbox' checked={checked} onChange={handleCheck}
                 onClick={handleClick} />

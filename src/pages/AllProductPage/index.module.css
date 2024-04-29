@@ -91,6 +91,7 @@
     line-height: 26px;
     text-align: left;
     color: #424436;
+    margin-top: 15px;
 }
 
 .formFrom{
@@ -98,7 +99,6 @@
     height: 36px;
     padding: 8px 16px 8px 16px;
     gap: 10px;
-    opacity: 0px;
     margin-right: 16px;
     font-family: Montserrat;
     font-size: 16px;
@@ -107,6 +107,7 @@
     text-align: left;
     border-radius: 6px;
     border: 1px solid #DDDDDD;
+    margin-top: 10px;
 }
 
 .formTo{
@@ -120,32 +121,35 @@
     border-radius: 6px;
     padding-left: 16px;
     border: 1px solid #DDDDDD;
+    
 }
 
-.sortedTitle {
+.sortedTitle > span {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
     text-align: left;
     color: #424436;
-    width: Hug (234px)px;
-    height: Hug (36px);
+    width: 234px;
+    height: 36px;
     gap: 16px;
-    opacity: 0px;
+   
 }
 
+
 .checkbox {
-    width: fixed 36px;
-    height: fixed 36px;
+    width: 36px;
+    height: 36px;
     gap: 10px;
     border-radius: 6px;
     opacity: 0px;
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
-    margin-right: 40px;
+    margin-right: 30px;
     margin-left: 10px;
 }
+
 
 .sorted {
     font-family: Montserrat;
@@ -158,6 +162,7 @@
     height: Hug (36px)px;
     gap: 16px;
     opacity: 0px;
+    padding-right: 10px;
 }
 
 .byDefault{
