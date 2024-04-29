@@ -5,13 +5,15 @@ const DELETE_CART_ITEM = 'DELETE_CART_ITEM';
 const INCR_COUNT = 'INCR_COUNT';
 const DECR_COUNT = 'DECR_COUNT';
 const ADD_SINGLE_PRODUCT = 'ADD_SINGLE_PRODUCT'
+const CLEAR_CART = 'CLEAR_CART'
+const CLEAR_BASKET = 'CLEAR_BASKET'
 
 export const addToCartAction = (product) => ({ type: ADD_TO_CART, payload: product });
 export const deleteCartItemAction = (id) => ({ type: DELETE_CART_ITEM, payload: id });
 export const incrCountAction = (id) => ({ type: INCR_COUNT, payload: id });
 export const addSingleProductAction = product => ({type: ADD_SINGLE_PRODUCT, payload: product});
 export const decrCountAction = (id) => ({ type: DECR_COUNT, payload: id });
-
+export const clearBasketAction =() =>({ type: CLEAR_BASKET });
 
 
 const checkProduct = (state, payload) => {
@@ -55,7 +57,9 @@ export const cartReducer = (state=defaultState, action) => {
     } else {
       targetCard.count--
     }
-    return [...state]
-  }
+ }
+ else if (action.type === CLEAR_BASKET){
+    return [];
+ }  
   return state
 }
