@@ -11,9 +11,10 @@
 }
    
 .categories_card > img {
-       width: 316px;
-       height:350px ;
-       border-radius: 12px; 
+    width: 316px;
+    height:350px ;
+    border-radius: 12px;
+    object-fit: cover;
 }
 
 @media(max-width: 1000px){
